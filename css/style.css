@@ -226,26 +226,140 @@ article section + section {
     margin-top: 2.5rem;
 }
 
+/* Card Color Variations */
 .card {
     background: white;
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     text-align: center;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
-    border: 1px solid #e9ecef;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Card color themes */
+.card:nth-child(8n+1) {
+    background: linear-gradient(135deg, #fef5fb, #fff9fc);
+    border-color: #f4d1e8;
+}
+
+.card:nth-child(8n+2) {
+    background: linear-gradient(135deg, #f0f8ff, #f8fcff);
+    border-color: #cce4ff;
+}
+
+.card:nth-child(8n+3) {
+    background: linear-gradient(135deg, #fffef0, #fffff8);
+    border-color: #ffe4b5;
+}
+
+.card:nth-child(8n+4) {
+    background: linear-gradient(135deg, #f0fff4, #f8fffa);
+    border-color: #b8e6c8;
+}
+
+.card:nth-child(8n+5) {
+    background: linear-gradient(135deg, #fff5f5, #fffafa);
+    border-color: #ffcccc;
+}
+
+.card:nth-child(8n+6) {
+    background: linear-gradient(135deg, #f8f0ff, #fdf8ff);
+    border-color: #e0ccff;
+}
+
+.card:nth-child(8n+7) {
+    background: linear-gradient(135deg, #f0ffff, #f8ffff);
+    border-color: #b8e6e6;
+}
+
+.card:nth-child(8n+8) {
+    background: linear-gradient(135deg, #fffaf0, #fffcf8);
+    border-color: #ffd4a3;
+}
+
+/* Enhanced hover effects */
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: left 0.5s ease;
+}
+
+.card:hover::before {
+    left: 100%;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+}
+
+.card:nth-child(8n+1):hover {
+    border-color: #e8a4d0;
+    box-shadow: 0 12px 32px rgba(232, 164, 208, 0.25);
+}
+
+.card:nth-child(8n+2):hover {
+    border-color: #99c9ff;
+    box-shadow: 0 12px 32px rgba(153, 201, 255, 0.25);
+}
+
+.card:nth-child(8n+3):hover {
+    border-color: #ffd191;
+    box-shadow: 0 12px 32px rgba(255, 209, 145, 0.25);
+}
+
+.card:nth-child(8n+4):hover {
+    border-color: #8dd6a8;
+    box-shadow: 0 12px 32px rgba(141, 214, 168, 0.25);
+}
+
+.card:nth-child(8n+5):hover {
+    border-color: #ff9999;
+    box-shadow: 0 12px 32px rgba(255, 153, 153, 0.25);
+}
+
+.card:nth-child(8n+6):hover {
+    border-color: #c199ff;
+    box-shadow: 0 12px 32px rgba(193, 153, 255, 0.25);
+}
+
+.card:nth-child(8n+7):hover {
+    border-color: #8dd6d6;
+    box-shadow: 0 12px 32px rgba(141, 214, 214, 0.25);
+}
+
+.card:nth-child(8n+8):hover {
+    border-color: #ffb366;
+    box-shadow: 0 12px 32px rgba(255, 179, 102, 0.25);
 }
 
 .card-icon {
     font-size: 2.5rem;
-    color: #068200;
     margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Icon color variations */
+.card:nth-child(8n+1) .card-icon { color: #d63384; }
+.card:nth-child(8n+2) .card-icon { color: #0066cc; }
+.card:nth-child(8n+3) .card-icon { color: #ff9500; }
+.card:nth-child(8n+4) .card-icon { color: #068200; }
+.card:nth-child(8n+5) .card-icon { color: #dc3545; }
+.card:nth-child(8n+6) .card-icon { color: #6f42c1; }
+.card:nth-child(8n+7) .card-icon { color: #17a2b8; }
+.card:nth-child(8n+8) .card-icon { color: #fd7e14; }
+
+.card:hover .card-icon {
+    transform: scale(1.1) rotate(5deg);
 }
 
 .card h3 {
@@ -345,21 +459,54 @@ article section + section {
 }
 
 .site-card {
-    background: white;
     padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
     text-decoration: none;
     color: inherit;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Site card color themes */
+.site-card:nth-child(3n+1) {
+    background: linear-gradient(135deg, #f8fff8, #fcfffc);
+    border-color: #d4f0d4;
+}
+
+.site-card:nth-child(3n+2) {
+    background: linear-gradient(135deg, #fff8f0, #fffcf8);
+    border-color: #ffe0cc;
+}
+
+.site-card:nth-child(3n+3) {
+    background: linear-gradient(135deg, #f0f8ff, #f8fcff);
+    border-color: #cce4ff;
 }
 
 .site-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.site-card:nth-child(3n+1):hover {
+    border-color: #a8e0a8;
+    box-shadow: 0 8px 20px rgba(168, 224, 168, 0.2);
+}
+
+.site-card:nth-child(3n+2):hover {
+    border-color: #ffcc99;
+    box-shadow: 0 8px 20px rgba(255, 204, 153, 0.2);
+}
+
+.site-card:nth-child(3n+3):hover {
+    border-color: #99c9ff;
+    box-shadow: 0 8px 20px rgba(153, 201, 255, 0.2);
 }
 
 .site-info h4 {
@@ -392,7 +539,6 @@ article section + section {
 }
 
 .school-card {
-    background: linear-gradient(135deg, #f0f8f0, #e8f5e8);
     padding: 2rem;
     border-radius: 15px;
     text-decoration: none;
@@ -400,13 +546,62 @@ article section + section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: all 0.3s ease;
-    border: 1px solid #d4e6d4;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* School card color themes with gradient */
+.school-card:nth-child(3n+1) {
+    background: linear-gradient(135deg, #f0f8f0, #f8fcf8);
+    border-color: #c8e6c8;
+}
+
+.school-card:nth-child(3n+2) {
+    background: linear-gradient(135deg, #f8f0ff, #fcf8ff);
+    border-color: #e0ccff;
+}
+
+.school-card:nth-child(3n+3) {
+    background: linear-gradient(135deg, #fff0f0, #fff8f8);
+    border-color: #ffcccc;
+}
+
+.school-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+    transition: left 0.6s ease;
+}
+
+.school-card:hover::before {
+    left: 100%;
 }
 
 .school-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.15);
+}
+
+.school-card:nth-child(3n+1):hover {
+    border-color: #9cd69c;
+    box-shadow: 0 10px 28px rgba(156, 214, 156, 0.25);
+}
+
+.school-card:nth-child(3n+2):hover {
+    border-color: #c199ff;
+    box-shadow: 0 10px 28px rgba(193, 153, 255, 0.25);
+}
+
+.school-card:nth-child(3n+3):hover {
+    border-color: #ff9999;
+    box-shadow: 0 10px 28px rgba(255, 153, 153, 0.25);
 }
 
 .school-info h3 {
@@ -438,23 +633,92 @@ article section + section {
 }
 
 .resource-card {
-    background: white;
     padding: 2rem;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Resource card color themes */
+.resource-card:nth-child(4n+1) {
+    background: linear-gradient(135deg, #f0fff4, #f8fffa);
+    border-color: #b8e6c8;
+}
+
+.resource-card:nth-child(4n+2) {
+    background: linear-gradient(135deg, #fff5f0, #fffaf8);
+    border-color: #ffccb8;
+}
+
+.resource-card:nth-child(4n+3) {
+    background: linear-gradient(135deg, #f0f5ff, #f8faff);
+    border-color: #b8ccff;
+}
+
+.resource-card:nth-child(4n+4) {
+    background: linear-gradient(135deg, #fff0f5, #fff8fa);
+    border-color: #ffb8cc;
+}
+
+.resource-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: left 0.5s ease;
+}
+
+.resource-card:hover::before {
+    left: 100%;
 }
 
 .resource-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+}
+
+.resource-card:nth-child(4n+1):hover {
+    border-color: #8dd6a8;
+    box-shadow: 0 12px 32px rgba(141, 214, 168, 0.25);
+}
+
+.resource-card:nth-child(4n+2):hover {
+    border-color: #ff9980;
+    box-shadow: 0 12px 32px rgba(255, 153, 128, 0.25);
+}
+
+.resource-card:nth-child(4n+3):hover {
+    border-color: #809cff;
+    box-shadow: 0 12px 32px rgba(128, 156, 255, 0.25);
+}
+
+.resource-card:nth-child(4n+4):hover {
+    border-color: #ff809c;
+    box-shadow: 0 12px 32px rgba(255, 128, 156, 0.25);
 }
 
 .resource-card i {
     font-size: 2.5rem;
-    color: #068200;
     margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Resource icon color variations */
+.resource-card:nth-child(4n+1) i { color: #068200; }
+.resource-card:nth-child(4n+2) i { color: #ff6633; }
+.resource-card:nth-child(4n+3) i { color: #3366ff; }
+.resource-card:nth-child(4n+4) i { color: #ff3366; }
+
+.resource-card:hover i {
+    transform: scale(1.1) rotate(5deg);
 }
 
 .resource-card h3 {
@@ -482,9 +746,10 @@ article section + section {
 
 /* Footer */
 .footer {
-    background: #2c3e50;
+    background: linear-gradient(135deg, #1a3d14, #2d5a26);
     color: white;
     padding: 3rem 0 1rem;
+    box-shadow: 0 -4px 15px rgba(0,0,0,0.1);
 }
 
 .footer-content {
@@ -498,7 +763,7 @@ article section + section {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #068200;
+    color: #b8f5b8;
 }
 
 .footer-section ul {
@@ -516,14 +781,14 @@ article section + section {
 }
 
 .footer-section a:hover {
-    color: #068200;
+    color: #b8f5b8;
 }
 
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
-    border-top: 1px solid #34495e;
-    color: #bdc3c7;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    color: #e8f5e8;
 }
 
 /* Weakness section styles */
@@ -564,16 +829,46 @@ article section + section {
 }
 
 .weakness-card {
-    background: white;
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.08);
     text-align: center;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
-    border: 1px solid #e9ecef;
+    border: 2px solid transparent;
     position: relative;
     overflow: hidden;
+}
+
+/* Weakness card color themes */
+.weakness-card:nth-child(6n+1) {
+    background: linear-gradient(135deg, #fff5fb, #fffbfd);
+    border-color: #f8e1f0;
+}
+
+.weakness-card:nth-child(6n+2) {
+    background: linear-gradient(135deg, #f5f8ff, #fbfdff);
+    border-color: #dae6ff;
+}
+
+.weakness-card:nth-child(6n+3) {
+    background: linear-gradient(135deg, #fffdf5, #fffefb);
+    border-color: #ffedcc;
+}
+
+.weakness-card:nth-child(6n+4) {
+    background: linear-gradient(135deg, #f5fff8, #fbfffd);
+    border-color: #ccf0da;
+}
+
+.weakness-card:nth-child(6n+5) {
+    background: linear-gradient(135deg, #fff8f8, #fffdfd);
+    border-color: #ffe0e0;
+}
+
+.weakness-card:nth-child(6n+6) {
+    background: linear-gradient(135deg, #fbf5ff, #fdfbff);
+    border-color: #ede0ff;
 }
 
 .weakness-card::before {
@@ -593,14 +888,56 @@ article section + section {
 }
 
 .weakness-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.weakness-card:nth-child(6n+1):hover {
+    border-color: #e8a4d0;
+    box-shadow: 0 10px 25px rgba(232, 164, 208, 0.2);
+}
+
+.weakness-card:nth-child(6n+2):hover {
+    border-color: #b3ccff;
+    box-shadow: 0 10px 25px rgba(179, 204, 255, 0.2);
+}
+
+.weakness-card:nth-child(6n+3):hover {
+    border-color: #ffd999;
+    box-shadow: 0 10px 25px rgba(255, 217, 153, 0.2);
+}
+
+.weakness-card:nth-child(6n+4):hover {
+    border-color: #99e0b3;
+    box-shadow: 0 10px 25px rgba(153, 224, 179, 0.2);
+}
+
+.weakness-card:nth-child(6n+5):hover {
+    border-color: #ffb3b3;
+    box-shadow: 0 10px 25px rgba(255, 179, 179, 0.2);
+}
+
+.weakness-card:nth-child(6n+6):hover {
+    border-color: #d9b3ff;
+    box-shadow: 0 10px 25px rgba(217, 179, 255, 0.2);
 }
 
 .weakness-icon {
     font-size: 2rem;
-    color: #068200;
     margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Weakness icon color variations */
+.weakness-card:nth-child(6n+1) .weakness-icon { color: #d63384; }
+.weakness-card:nth-child(6n+2) .weakness-icon { color: #4d79ff; }
+.weakness-card:nth-child(6n+3) .weakness-icon { color: #ffb333; }
+.weakness-card:nth-child(6n+4) .weakness-icon { color: #33cc66; }
+.weakness-card:nth-child(6n+5) .weakness-icon { color: #ff6666; }
+.weakness-card:nth-child(6n+6) .weakness-icon { color: #9966ff; }
+
+.weakness-card:hover .weakness-icon {
+    transform: scale(1.15) rotate(-5deg);
 }
 
 .weakness-card h4 {
@@ -806,6 +1143,38 @@ article section + section {
     }
 }
 
+/* Common card styles for reusability */
+.styled-card {
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.styled-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: left 0.5s ease;
+}
+
+.styled-card:hover::before {
+    left: 100%;
+}
+
+.styled-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {
@@ -818,7 +1187,7 @@ article section + section {
     }
 }
 
-.card, .site-card, .school-card, .resource-card {
+.card, .site-card, .school-card, .resource-card, .weakness-card {
     animation: fadeInUp 0.6s ease-out;
 }
 

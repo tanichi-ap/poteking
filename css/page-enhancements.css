@@ -1,0 +1,848 @@
+/* Enhanced Page Styles for Beautiful Design */
+
+/* Reset main-content to prevent conflicts */
+.main-content {
+    padding: 2rem 0 !important;
+    display: block !important;
+    grid-template-columns: none !important;
+}
+
+/* Main grid container for two-column layout */
+.main-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 300px !important;
+    gap: 3rem !important;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+    align-items: start !important;
+}
+
+/* Article takes the main content area */
+.main-grid .article {
+    grid-column: 1 / 2 !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+}
+
+/* Sidebar takes the second column */
+.main-grid .sidebar {
+    grid-column: 2 / 3 !important;
+    width: 100% !important;
+    max-width: 300px !important;
+    margin: 0 !important;
+}
+
+/* Content Section - No border/background */
+.content-section {
+    margin-bottom: 3rem !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    position: relative !important;
+    overflow: visible !important;
+}
+
+/* Section Headers - Simple style */
+.content-section h2 {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    color: #2c3e50 !important;
+    margin: 2.5rem 0 1.5rem 0 !important;
+    padding: 0 0 0.8rem 0 !important;
+    background: transparent !important;
+    border-bottom: 3px solid #068200 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.8rem !important;
+    border-radius: 0 !important;
+    position: relative !important;
+}
+
+.content-section h2 i {
+    color: #068200 !important;
+    font-size: 1.8rem !important;
+    margin-right: 0.5rem !important;
+}
+
+/* Template Cards - Simplified */
+.time-templates {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.template-card {
+    background: white !important;
+    border-radius: 12px !important;
+    padding: 0 !important;
+    border: 1px solid #e8f5e8 !important;
+    position: relative !important;
+    overflow: hidden !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06) !important;
+}
+
+.template-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
+    border-color: #b8e6c8 !important;
+}
+
+.template-card h3 {
+    color: #068200 !important;
+    margin: 0 !important;
+    padding: 1.2rem 1.5rem !important;
+    font-size: 1.2rem !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.8rem !important;
+    font-weight: 600 !important;
+    background: #f8fff8 !important;
+    border-bottom: 1px solid #e8f5e8 !important;
+}
+
+.template-card h3 i {
+    color: #068200 !important;
+    font-size: 1.2rem !important;
+    margin-right: 0.5rem !important;
+}
+
+.template-content {
+    padding: 1.5rem !important;
+}
+
+/* Example Box - Simplified */
+.example-box {
+    background: #f8fff8 !important;
+    padding: 1.5rem !important;
+    border-radius: 8px !important;
+    border-left: 3px solid #068200 !important;
+    margin: 1rem 0 !important;
+    transition: all 0.3s ease !important;
+}
+
+.example-box p {
+    color: #444 !important;
+    line-height: 1.8 !important;
+    font-size: 0.95rem !important;
+    font-style: italic !important;
+}
+
+/* Structure Box - Simplified */
+.structure-box {
+    background: #fafafa !important;
+    padding: 1.5rem !important;
+    border-radius: 8px !important;
+    margin-top: 1.5rem !important;
+    border: 1px solid #e0e0e0 !important;
+}
+
+.structure-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 1.5rem !important;
+    margin-bottom: 0.8rem !important;
+    padding: 0.8rem !important;
+    background: white !important;
+    border-radius: 6px !important;
+    transition: all 0.3s ease !important;
+}
+
+.structure-item:hover {
+    background: #f8fff8 !important;
+}
+
+.time-label {
+    background: linear-gradient(135deg, #068200, #0b7c01) !important;
+    color: white !important;
+    padding: 0.4rem 1rem !important;
+    border-radius: 20px !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    box-shadow: 0 2px 8px rgba(6,130,0,0.3) !important;
+    min-width: 80px !important;
+    text-align: center !important;
+}
+
+/* Point Cards - Simplified */
+.point-card {
+    background: white !important;
+    padding: 1.5rem !important;
+    border-radius: 10px !important;
+    text-align: center !important;
+    border: 1px solid #e8f5e8 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06) !important;
+}
+
+.point-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+    border-color: #b8e6c8 !important;
+}
+
+.point-icon {
+    width: 50px !important;
+    height: 50px !important;
+    margin: 0 auto 1rem !important;
+    background: #f0fff4 !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.point-icon i {
+    font-size: 1.5rem !important;
+    color: #068200 !important;
+}
+
+.point-card ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 1rem 0 !important;
+    text-align: left !important;
+}
+
+.point-card li {
+    margin-bottom: 0.8rem !important;
+    padding: 0.5rem 1rem !important;
+    background: #f8fff8 !important;
+    border-radius: 6px !important;
+    border-left: 3px solid #068200 !important;
+    position: relative !important;
+    transition: all 0.3s ease !important;
+}
+
+.point-card li:hover {
+    background: #f0fff4 !important;
+    transform: translateX(3px) !important;
+}
+
+/* Industry Cards - Simplified */
+.industry-card {
+    background: white !important;
+    border-radius: 10px !important;
+    padding: 0 !important;
+    border: 1px solid #e8f5e8 !important;
+    overflow: hidden !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06) !important;
+}
+
+.industry-card ul {
+    padding-left: 2rem !important;
+    margin: 1rem 0 !important;
+}
+
+.industry-card ol {
+    padding-left: 2rem !important;
+    margin: 1rem 0 !important;
+}
+
+.industry-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+    border-color: #b8e6c8 !important;
+}
+
+.industry-card h3 {
+    color: #068200 !important;
+    margin: 0 !important;
+    padding: 1rem 1.5rem !important;
+    font-size: 1.2rem !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.8rem !important;
+    font-weight: 600 !important;
+    background: #f8fff8 !important;
+    border-bottom: 1px solid #e8f5e8 !important;
+}
+
+.industry-card h3 i {
+    color: #068200 !important;
+    font-size: 1.2rem !important;
+    margin-right: 0.5rem !important;
+}
+
+.industry-card h4 {
+    color: #068200 !important;
+    margin: 0 !important;
+    padding: 1rem 1.5rem !important;
+    font-size: 1.2rem !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.8rem !important;
+    font-weight: 600 !important;
+    background: #f8fff8 !important;
+    border-bottom: 1px solid #e8f5e8 !important;
+}
+
+.industry-card h4 i {
+    color: #068200 !important;
+    font-size: 1.2rem !important;
+    margin-right: 0.5rem !important;
+    flex-shrink: 0 !important;
+}
+
+.industry-content {
+    padding: 1.5rem !important;
+}
+
+.industry-content ul {
+    padding-left: 2rem !important;
+    margin: 1rem 0 !important;
+}
+
+.industry-content ol {
+    padding-left: 2rem !important;
+    margin: 1rem 0 !important;
+}
+
+/* NG Items - Simplified */
+.ng-behaviors {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+    gap: 1.5rem !important;
+    margin-top: 1.5rem !important;
+}
+
+.ng-item {
+    background: #fff5f5 !important;
+    padding: 1.2rem !important;
+    border-radius: 8px !important;
+    border-left: 3px solid #dc3545 !important;
+    transition: all 0.3s ease !important;
+}
+
+.ng-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(220,53,69,0.1) !important;
+}
+
+.ng-item h3 {
+    color: #dc3545 !important;
+    margin-bottom: 0.8rem !important;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+}
+
+/* Practice Steps - Simplified */
+.practice-steps {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+    margin-top: 2rem !important;
+    position: relative !important;
+    padding-left: 3rem !important;
+}
+
+.practice-steps::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    bottom: 20px;
+    width: 2px;
+    background: #068200;
+}
+
+.practice-step {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+    background: white !important;
+    padding: 1.2rem !important;
+    padding-left: 1.5rem !important;
+    border-radius: 8px !important;
+    border: 1px solid #e8f5e8 !important;
+    position: relative !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05) !important;
+}
+
+.practice-step:hover {
+    transform: translateX(5px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08) !important;
+}
+
+.practice-step .step-number {
+    width: 32px !important;
+    height: 32px !important;
+    background: #068200 !important;
+    color: white !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: 600 !important;
+    flex-shrink: 0 !important;
+    position: absolute !important;
+    left: -41px !important;
+    top: 15px !important;
+}
+
+.practice-step .step-content {
+    flex: 1 !important;
+}
+
+.practice-step .step-content h3 {
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+    color: #068200 !important;
+    font-size: 1.1rem !important;
+}
+
+.practice-step .step-content p {
+    margin: 0 !important;
+    color: #555 !important;
+}
+
+.practice-step .step-content ul {
+    margin: 1rem 0 !important;
+    padding-left: 2rem !important;
+}
+
+.practice-step .step-content h4 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1rem !important;
+    color: #068200 !important;
+    font-weight: 600 !important;
+}
+
+/* Checklist - Simplified */
+.checklist {
+    background: #f8fff8 !important;
+    border-radius: 10px !important;
+    padding: 1.5rem !important;
+    margin-top: 2rem !important;
+    border: 1px solid #e8f5e8 !important;
+}
+
+.checklist-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 1rem !important;
+    margin-bottom: 1rem !important;
+    padding: 0.8rem 1rem !important;
+    background: white !important;
+    border-radius: 6px !important;
+    transition: all 0.3s ease !important;
+}
+
+.checklist-item:hover {
+    background: #fcfffc !important;
+    transform: translateX(3px);
+}
+
+/* Sidebar Enhancement */
+.sidebar {
+    background: linear-gradient(135deg, #f0f8f0, #e8f5e8) !important;
+    border-radius: 15px !important;
+    padding: 2rem !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08) !important;
+    position: sticky !important;
+    top: 120px !important;
+    height: fit-content !important;
+}
+
+.related-articles, .quick-tips {
+    background: white !important;
+    border-radius: 10px !important;
+    padding: 1.5rem !important;
+    margin-bottom: 2rem !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06) !important;
+    transition: all 0.3s ease !important;
+}
+
+.related-articles:hover, .quick-tips:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+}
+
+.related-articles h3, .quick-tips h3 {
+    color: #2c3e50 !important;
+    margin-bottom: 1.2rem !important;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    border-bottom: 2px solid #e8f5e8 !important;
+    padding-bottom: 0.8rem !important;
+}
+
+.related-articles h3::before {
+    content: '📚';
+    font-size: 1.2rem;
+}
+
+.quick-tips h3::before {
+    content: '💡';
+    font-size: 1.2rem;
+}
+
+.related-articles ul {
+    list-style: none !important;
+    padding: 0 !important;
+}
+
+.related-articles li {
+    margin-bottom: 0.8rem !important;
+    padding: 0.5rem 0 !important;
+    border-bottom: 1px solid #f0f0f0 !important;
+}
+
+.related-articles li:last-child {
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+}
+
+.related-articles a {
+    color: #068200 !important;
+    text-decoration: none !important;
+    font-size: 0.95rem !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+    display: block !important;
+    padding: 0.3rem 0 !important;
+}
+
+.related-articles a:hover {
+    color: #0b7c01 !important;
+    padding-left: 10px !important;
+    background: #f8fff8 !important;
+    border-radius: 4px !important;
+}
+
+.tip-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.8rem !important;
+    margin-bottom: 1rem !important;
+    padding: 0.8rem !important;
+    background: linear-gradient(135deg, #f8fff8, #ffffff) !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+    border-left: 3px solid transparent !important;
+}
+
+.tip-item:hover {
+    transform: translateX(3px) !important;
+    border-left-color: #068200 !important;
+    background: linear-gradient(135deg, #f0fff4, #f8fff8) !important;
+}
+
+.tip-item i {
+    color: #068200 !important;
+    font-size: 1.1rem !important;
+    width: 20px !important;
+    text-align: center !important;
+}
+
+.tip-item p {
+    color: #333 !important;
+    font-size: 0.9rem !important;
+    margin: 0 !important;
+    font-weight: 500 !important;
+}
+
+.checklist-item input[type="checkbox"] {
+    width: 22px !important;
+    height: 22px !important;
+    accent-color: #068200 !important;
+    cursor: pointer;
+}
+
+.checklist-item input[type="checkbox"]:checked + label {
+    color: #068200 !important;
+    font-weight: 500 !important;
+}
+
+.checklist-item label {
+    cursor: pointer;
+    flex: 1;
+}
+
+/* Add subtle animation for checked items */
+@keyframes checkmark {
+    0% { transform: scale(0) rotate(0deg); }
+    50% { transform: scale(1.2) rotate(10deg); }
+    100% { transform: scale(1) rotate(0deg); }
+}
+
+/* Fix for overlapping step numbers */
+.step-number {
+    margin: 0 !important;
+}
+
+/* Fix point-card padding for content-heavy sections */
+.point-card .element-content {
+    margin-top: 1rem !important;
+}
+
+.point-card .element-content h4 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1rem !important;
+    color: #068200 !important;
+    font-weight: 600 !important;
+}
+
+.point-card .element-content ul {
+    margin: 1rem 0 !important;
+    padding-left: 1.5rem !important;
+}
+
+.point-card .element-content p {
+    margin: 1rem 0 !important;
+    line-height: 1.6 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .main-grid {
+        grid-template-columns: 1fr 280px !important;
+        gap: 2rem !important;
+    }
+    
+    .sidebar {
+        padding: 1.5rem !important;
+    }
+    
+    .related-articles, .quick-tips {
+        padding: 1.2rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .main-content {
+        padding: 1rem 0 !important;
+    }
+    
+    .main-grid {
+        display: block !important;
+        grid-template-columns: none !important;
+        gap: 2rem !important;
+    }
+    
+    .main-grid .article {
+        grid-column: auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    .main-grid .sidebar {
+        grid-column: auto !important;
+        max-width: none !important;
+        position: static !important;
+        padding: 1.5rem !important;
+    }
+    
+    .content-section {
+        padding: 1.5rem !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    .content-section h2 {
+        margin: -1.5rem -1.5rem 1rem -1.5rem !important;
+        padding: 1.2rem 1.5rem !important;
+        font-size: 1.5rem !important;
+    }
+    
+    .template-card, .industry-card {
+        padding: 1.5rem !important;
+    }
+    
+    .practice-steps {
+        padding-left: 2.5rem !important;
+    }
+    
+    .practice-step .step-number {
+        left: -35px !important;
+        width: 30px !important;
+        height: 30px !important;
+        font-size: 0.9rem !important;
+        top: 12px !important;
+    }
+    
+    .practice-steps::before {
+        left: 10px;
+    }
+    
+    .related-articles h3, .quick-tips h3 {
+        font-size: 1rem !important;
+    }
+    
+    .tip-item {
+        padding: 0.6rem !important;
+    }
+    
+    .tip-item p {
+        font-size: 0.85rem !important;
+    }
+}
+
+/* Article Navigation - Enhanced */
+.article-nav {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 2rem !important;
+    margin: 3rem 0 !important;
+    padding: 2rem 0 !important;
+    border-top: 2px solid #e8f5e8 !important;
+}
+
+.nav-prev, .nav-next {
+    display: flex !important;
+}
+
+.nav-link {
+    display: block !important;
+    text-decoration: none !important;
+    background: white !important;
+    border: 1px solid #e8f5e8 !important;
+    border-radius: 10px !important;
+    padding: 1.5rem !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06) !important;
+    width: 100% !important;
+}
+
+.nav-link:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+    border-color: #b8e6c8 !important;
+}
+
+.nav-direction {
+    font-size: 0.9rem !important;
+    color: #068200 !important;
+    font-weight: 600 !important;
+    margin-bottom: 0.5rem !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+}
+
+.nav-title {
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    color: #2c3e50 !important;
+    line-height: 1.4 !important;
+}
+
+.nav-prev .nav-direction::before {
+    content: '←' !important;
+    font-size: 1.2rem !important;
+}
+
+.nav-next .nav-direction::after {
+    content: '→' !important;
+    font-size: 1.2rem !important;
+}
+
+.nav-next {
+    text-align: right !important;
+}
+
+@media (max-width: 768px) {
+    .article-nav {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+    
+    .nav-next {
+        text-align: left !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        padding: 0.8rem 0 !important;
+    }
+    
+    .main-grid {
+        padding: 0 10px !important;
+    }
+    
+    .content-section {
+        padding: 1.2rem !important;
+        border-radius: 15px !important;
+    }
+    
+    .content-section h2 {
+        margin: -1.2rem -1.2rem 1rem -1.2rem !important;
+        padding: 1rem 1.2rem !important;
+        font-size: 1.3rem !important;
+    }
+    
+    .point-card, .template-card, .industry-card {
+        padding: 1.2rem !important;
+    }
+    
+    .checklist {
+        padding: 1.5rem !important;
+    }
+    
+    .checklist-item {
+        padding: 1rem !important;
+    }
+    
+    .sidebar {
+        padding: 1.2rem !important;
+        margin-top: 1.5rem !important;
+    }
+    
+    .related-articles, .quick-tips {
+        padding: 1rem !important;
+        margin-bottom: 1.2rem !important;
+    }
+    
+    .related-articles h3, .quick-tips h3 {
+        font-size: 0.95rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .related-articles a {
+        font-size: 0.9rem !important;
+    }
+    
+    .tip-item {
+        padding: 0.5rem !important;
+        gap: 0.6rem !important;
+    }
+    
+    .tip-item p {
+        font-size: 0.8rem !important;
+    }
+}
+
+/* Icon spacing fixes for all heading levels */
+h1 i, h2 i, h3 i, h4 i, h5 i, h6 i {
+    margin-right: 0.8rem !important;
+}
+
+/* Specific icon spacing for cards */
+.industry-card h1 i, .industry-card h2 i, .industry-card h3 i, .industry-card h4 i, .industry-card h5 i,
+.point-card h1 i, .point-card h2 i, .point-card h3 i, .point-card h4 i, .point-card h5 i,
+.template-card h1 i, .template-card h2 i, .template-card h3 i, .template-card h4 i, .template-card h5 i {
+    margin-right: 0.8rem !important;
+}
+
+/* Footer layout fixes for 2-column pages */
+#footer-container {
+    width: 100% !important;
+    clear: both !important;
+    grid-column: 1 / -1 !important;
+}
+
+/* Ensure footer spans full width in grid layouts */
+.main-grid ~ #footer-container,
+.main-content ~ #footer-container {
+    grid-column: 1 / -1 !important;
+}

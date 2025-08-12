@@ -17,6 +17,7 @@
     <link rel="canonical" href="https://poteking.com/it-internet.html">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/page-enhancements.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
@@ -73,12 +74,13 @@
 
     <main class="main-content">
         <div class="container">
-            <div class="main-article">
-                <div class="breadcrumb">
-                    <a href="/">ホーム</a> > <a href="/#industry-guide">業界別対策</a> > <span>インターネット企業</span>
-                </div>
-
-                <article class="article">
+            <div class="breadcrumb">
+                <a href="/">ホーム</a> > <a href="/#industry-guide">業界別対策</a> > <span>インターネット企業</span>
+            </div>
+        </div>
+        
+        <div class="container main-grid">
+            <article class="article">
                     <header class="article-header">
                         <h1>インターネット・Web企業の面接対策</h1>
                         <p class="article-subtitle">Google、Amazon、メルカリ、サイバーエージェントなどインターネット・ウェブ企業への転職・就職を目指す方必見！プロダクト思考、ユーザー体験設計、データ分析、アジャイル開発など、インターネット業界が求める人材像と面接での評価ポイントを徹底攻略。デジタルイノベーションを創出するプロフェッショナルとして活躍するための面接準備法</p>
@@ -104,10 +106,10 @@
                             <p>インターネット企業は規模や事業形態によって異なる特徴を持ち、それぞれに適した面接対策が必要です。企業の性質を理解して戦略的に準備しましょう。</p>
 
                             <h3>企業分類別の特徴</h3>
-                            <div class="company-categories">
-                                <div class="category-card">
+                            <div class="industry-customization">
+                                <div class="industry-card">
                                     <h4><i class="fas fa-crown"></i> 外資系テック企業（GAFA等）</h4>
-                                    <div class="category-content">
+                                    <div class="industry-content">
                                         <h5>企業特徴</h5>
                                         <ul>
                                             <li>グローバルスケールのプラットフォーム</li>
@@ -126,9 +128,9 @@
                                     </div>
                                 </div>
 
-                                <div class="category-card">
+                                <div class="industry-card">
                                     <h4><i class="fas fa-rocket"></i> メガベンチャー</h4>
-                                    <div class="category-content">
+                                    <div class="industry-content">
                                         <h5>企業特徴</h5>
                                         <ul>
                                             <li>急成長期の事業拡大</li>
@@ -147,9 +149,9 @@
                                     </div>
                                 </div>
 
-                                <div class="category-card">
+                                <div class="industry-card">
                                     <h4><i class="fas fa-seedling"></i> スタートアップ</h4>
-                                    <div class="category-content">
+                                    <div class="industry-content">
                                         <h5>企業特徴</h5>
                                         <ul>
                                             <li>革新的なプロダクト開発</li>
@@ -175,10 +177,13 @@
                         <section id="company-culture" class="content-section">
                             <h2><i class="fas fa-users"></i> 企業文化と求められる人材</h2>
 
-                            <div class="culture-analysis">
-                                <div class="culture-aspect">
-                                    <h3><i class="fas fa-tachometer-alt"></i> スピード重視の文化</h3>
-                                    <div class="aspect-content">
+                            <div class="impression-points">
+                                <div class="point-card">
+                                    <div class="point-icon">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                    </div>
+                                    <h3>スピード重視の文化</h3>
+                                    <div class="element-content">
                                         <h4>文化の特徴</h4>
                                         <ul>
                                             <li>迅速な意思決定と実行</li>
@@ -197,9 +202,12 @@
                                     </div>
                                 </div>
 
-                                <div class="culture-aspect">
-                                    <h3><i class="fas fa-chart-line"></i> データドリブン思考</h3>
-                                    <div class="aspect-content">
+                                <div class="point-card">
+                                    <div class="point-icon">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <h3>データドリブン思考</h3>
+                                    <div class="element-content">
                                         <h4>文化の特徴</h4>
                                         <ul>
                                             <li>データに基づく意思決定</li>
@@ -218,9 +226,12 @@
                                     </div>
                                 </div>
 
-                                <div class="culture-aspect">
-                                    <h3><i class="fas fa-eye"></i> ユーザーファースト</h3>
-                                    <div class="aspect-content">
+                                <div class="point-card">
+                                    <div class="point-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </div>
+                                    <h3>ユーザーファースト</h3>
+                                    <div class="element-content">
                                         <h4>文化の特徴</h4>
                                         <ul>
                                             <li>ユーザー体験の最優先</li>
@@ -246,11 +257,11 @@
                         <section id="product-understanding" class="content-section">
                             <h2><i class="fas fa-cube"></i> プロダクト理解の重要性</h2>
 
-                            <div class="product-analysis">
-                                <div class="analysis-framework">
+                            <div class="industry-customization">
+                                <div class="industry-card">
                                     <h3><i class="fas fa-search"></i> プロダクト分析のフレームワーク</h3>
-                                    <div class="framework-steps">
-                                        <div class="step-item">
+                                    <div class="industry-content">
+                                        <div class="example-box">
                                             <h4>1. ユーザー理解</h4>
                                             <ul>
                                                 <li>ターゲットユーザーの特定</li>
@@ -259,7 +270,7 @@
                                                 <li>ペインポイントの特定</li>
                                             </ul>
                                         </div>
-                                        <div class="step-item">
+                                        <div class="example-box">
                                             <h4>2. 価値提案分析</h4>
                                             <ul>
                                                 <li>解決している課題</li>
@@ -268,7 +279,7 @@
                                                 <li>独自性の源泉</li>
                                             </ul>
                                         </div>
-                                        <div class="step-item">
+                                        <div class="example-box">
                                             <h4>3. ビジネスモデル理解</h4>
                                             <ul>
                                                 <li>収益構造の把握</li>
@@ -280,9 +291,9 @@
                                     </div>
                                 </div>
 
-                                <div class="improvement-suggestions">
+                                <div class="industry-card">
                                     <h3><i class="fas fa-lightbulb"></i> 改善提案の考え方</h3>
-                                    <div class="suggestion-approach">
+                                    <div class="industry-content">
                                         <h4>データに基づく改善案</h4>
                                         <ul>
                                             <li><strong>ユーザー行動分析：</strong>離脱ポイントの特定と改善</li>
@@ -308,12 +319,12 @@
                         <section id="interview-questions" class="content-section">
                             <h2><i class="fas fa-question-circle"></i> 頻出質問と回答戦略</h2>
 
-                            <div class="question-categories">
-                                <div class="question-category">
+                            <div class="industry-customization">
+                                <div class="industry-card">
                                     <h3><i class="fas fa-heart"></i> 志望動機・ビジョン関連</h3>
-                                    <div class="question-block">
+                                    <div class="industry-content">
                                         <h4>Q: なぜ当社のプロダクトに興味を持ったのですか？</h4>
-                                        <div class="answer-strategy">
+                                        <div class="example-box">
                                             <h5>回答のポイント</h5>
                                             <ul>
                                                 <li>実際の利用体験に基づく具体的な感想</li>
@@ -322,15 +333,13 @@
                                             </ul>
                                             
                                             <h5>回答例</h5>
-                                            <div class="example-text">
                                                 <p>「御社のサービスを1年間利用し、特に○○機能の使いやすさに感動しました。従来のサービスでは複雑だった△△が、直感的な操作で解決できる点が素晴らしいと思います。ただし、□□の部分でユーザビリティの改善余地があり、私の技術スキルでその課題解決に貢献したいと考えています。」</p>
-                                            </div>
                                         </div>
                                     </div>
 
-                                    <div class="question-block">
+                                    <div class="industry-content">
                                         <h4>Q: 10年後、インターネット業界はどう変化していると思いますか？</h4>
-                                        <div class="answer-strategy">
+                                        <div class="example-box">
                                             <h5>回答のポイント</h5>
                                             <ul>
                                                 <li>技術トレンドと社会変化の関連性</li>
@@ -339,18 +348,16 @@
                                             </ul>
                                             
                                             <h5>回答例</h5>
-                                            <div class="example-text">
                                                 <p>「AI・機械学習の発達により、よりパーソナライズされたサービスが当たり前になると考えています。また、VR/ARによって物理的な制約を超えたコミュニケーションが普及し、リモートワークや教育の形が根本的に変わると予想します。このような変化に対応するため、現在はAI技術の学習とUX設計のスキル向上に取り組んでいます。」</p>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="question-category">
+                                <div class="industry-card">
                                     <h3><i class="fas fa-cogs"></i> プロダクト思考関連</h3>
-                                    <div class="question-block">
+                                    <div class="industry-content">
                                         <h4>Q: 弊社のプロダクトをどう改善しますか？</h4>
-                                        <div class="answer-strategy">
+                                        <div class="example-box">
                                             <h5>回答のポイント</h5>
                                             <ul>
                                                 <li>ユーザー視点での課題特定</li>
@@ -359,18 +366,16 @@
                                             </ul>
                                             
                                             <h5>回答例</h5>
-                                            <div class="example-text">
                                                 <p>「ユーザーレビューを分析したところ、○○の手順が複雑という声が多く見られました。この部分をワンクリックで完了できるよう改善すれば、ユーザビリティが向上し、コンバージョン率も10-15%改善できると考えます。技術的にはAPIの統合により実現可能で、A/Bテストで効果を検証することを提案します。」</p>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="question-category">
+                                <div class="industry-card">
                                     <h3><i class="fas fa-chart-bar"></i> 数値思考関連</h3>
-                                    <div class="question-block">
+                                    <div class="industry-content">
                                         <h4>Q: 新機能のKPIをどう設定しますか？</h4>
-                                        <div class="answer-strategy">
+                                        <div class="example-box">
                                             <h5>回答のポイント</h5>
                                             <ul>
                                                 <li>ビジネス目標との連動</li>
@@ -379,9 +384,7 @@
                                             </ul>
                                             
                                             <h5>回答例</h5>
-                                            <div class="example-text">
                                                 <p>「新機能の目的がユーザーエンゲージメント向上であれば、主要KPIを『機能利用率』『セッション時間延長』『リテンション率改善』に設定します。具体的には、リリース後3ヶ月で利用率30%、平均セッション時間20%増を目標とし、長期的には月次アクティブユーザーの10%増加を目指します。」</p>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -393,10 +396,10 @@
                         <section id="case-study" class="content-section">
                             <h2><i class="fas fa-lightbulb"></i> ケーススタディ対策</h2>
 
-                            <div class="case-study-types">
-                                <div class="case-type">
+                            <div class="industry-customization">
+                                <div class="industry-card">
                                     <h3><i class="fas fa-mobile-alt"></i> プロダクト企画ケース</h3>
-                                    <div class="case-content">
+                                    <div class="industry-content">
                                         <h4>典型的な出題例</h4>
                                         <ul>
                                             <li>「高齢者向けのスマートフォンアプリを企画してください」</li>
@@ -414,9 +417,9 @@
                                     </div>
                                 </div>
 
-                                <div class="case-type">
+                                <div class="industry-card">
                                     <h3><i class="fas fa-chart-line"></i> データ分析ケース</h3>
-                                    <div class="case-content">
+                                    <div class="industry-content">
                                         <h4>典型的な出題例</h4>
                                         <ul>
                                             <li>「ユーザーの離脱率が急増している原因を分析してください」</li>
@@ -434,9 +437,9 @@
                                     </div>
                                 </div>
 
-                                <div class="case-type">
+                                <div class="industry-card">
                                     <h3><i class="fas fa-cog"></i> 技術システムケース</h3>
-                                    <div class="case-content">
+                                    <div class="industry-content">
                                         <h4>典型的な出題例</h4>
                                         <ul>
                                             <li>「月間1000万PVのWebサイトを設計してください」</li>
@@ -461,10 +464,10 @@
                         <section id="technical-skills" class="content-section">
                             <h2><i class="fas fa-code"></i> 技術スキルの評価ポイント</h2>
 
-                            <div class="technical-evaluation">
-                                <div class="skill-category">
+                            <div class="industry-customization">
+                                <div class="industry-card">
                                     <h3><i class="fas fa-laptop-code"></i> フロントエンド開発</h3>
-                                    <div class="skill-details">
+                                    <div class="industry-content">
                                         <h4>重要なスキル</h4>
                                         <ul>
                                             <li><strong>モダンJavaScript：</strong>ES6+、非同期処理、モジュール化</li>
@@ -484,9 +487,9 @@
                                     </div>
                                 </div>
 
-                                <div class="skill-category">
+                                <div class="industry-card">
                                     <h3><i class="fas fa-server"></i> バックエンド開発</h3>
-                                    <div class="skill-details">
+                                    <div class="industry-content">
                                         <h4>重要なスキル</h4>
                                         <ul>
                                             <li><strong>API設計：</strong>RESTful API、GraphQL</li>
@@ -506,9 +509,9 @@
                                     </div>
                                 </div>
 
-                                <div class="skill-category">
+                                <div class="industry-card">
                                     <h3><i class="fas fa-cloud"></i> インフラ・DevOps</h3>
-                                    <div class="skill-details">
+                                    <div class="industry-content">
                                         <h4>重要なスキル</h4>
                                         <ul>
                                             <li><strong>クラウドサービス：</strong>AWS、GCP、Azure</li>
@@ -535,9 +538,12 @@
                         <section id="success-factors" class="content-section">
                             <h2><i class="fas fa-trophy"></i> 合格のための成功要因</h2>
 
-                            <div class="success-checklist">
-                                <div class="success-area">
-                                    <h3><i class="fas fa-eye"></i> プロダクト理解度</h3>
+                            <div class="impression-points">
+                                <div class="point-card">
+                                    <div class="point-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </div>
+                                    <h3>プロダクト理解度</h3>
                                     <ul>
                                         <li>対象プロダクトの深い利用体験</li>
                                         <li>競合との比較分析</li>
@@ -547,8 +553,11 @@
                                     </ul>
                                 </div>
 
-                                <div class="success-area">
-                                    <h3><i class="fas fa-chart-bar"></i> 数値・データ思考</h3>
+                                <div class="point-card">
+                                    <div class="point-icon">
+                                        <i class="fas fa-chart-bar"></i>
+                                    </div>
+                                    <h3>数値・データ思考</h3>
                                     <ul>
                                         <li>KPI設定とメトリクス理解</li>
                                         <li>A/Bテストと統計分析の基礎</li>
@@ -558,8 +567,11 @@
                                     </ul>
                                 </div>
 
-                                <div class="success-area">
-                                    <h3><i class="fas fa-users"></i> チームワーク</h3>
+                                <div class="point-card">
+                                    <div class="point-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <h3>チームワーク</h3>
                                     <ul>
                                         <li>アジャイル開発経験</li>
                                         <li>クロスファンクショナルチーム経験</li>
@@ -569,8 +581,11 @@
                                     </ul>
                                 </div>
 
-                                <div class="success-area">
-                                    <h3><i class="fas fa-rocket"></i> 成長意欲</h3>
+                                <div class="point-card">
+                                    <div class="point-icon">
+                                        <i class="fas fa-rocket"></i>
+                                    </div>
+                                    <h3>成長意欲</h3>
                                     <ul>
                                         <li>継続的な技術学習</li>
                                         <li>新しい挑戦への積極性</li>
@@ -581,13 +596,11 @@
                                 </div>
                             </div>
 
-                            <div class="final-advice">
+                            <div class="example-box">
                                 <h3><i class="fas fa-star"></i> 最終アドバイス</h3>
-                                <div class="advice-content">
                                     <p>インターネット企業の面接では、技術力だけでなく「プロダクトを愛し、ユーザーのために価値を創造したい」という熱意が重要です。面接官も現場で働くエンジニアやプロダクトマネージャーが多いため、実務に即した具体的な議論ができることが評価されます。</p>
                                     
                                     <p>また、変化の激しい業界なので、新しい技術や手法に対する好奇心と学習意欲を示すことも大切です。過去の実績だけでなく、「これから何を学び、どう成長したいか」という未来志向の姿勢をアピールしましょう。</p>
-                                </div>
                             </div>
                         </section>
                     </div>
@@ -607,10 +620,8 @@
                         </div>
                     </div>
                 </article>
-            </div>
 
-            <aside class="sticky-sidebar">
-                <div class="sidebar">
+            <aside class="sidebar">
                     <div class="table-of-contents">
                         <h3><i class="fas fa-list"></i> この記事の目次</h3>
                         <ul class="toc-list">
@@ -673,36 +684,10 @@
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>就職・転職まとめ＠面接対策</h4>
-                    <p>就職・転職活動を成功に導く面接対策情報を提供</p>
-                </div>
-                <div class="footer-section">
-                    <h4>IT業界対策</h4>
-                    <ul>
-                        <li><a href="it-newgrad.html">新卒採用</a></li>
-                        <li><a href="it-career.html">キャリア採用</a></li>
-                        <li><a href="it-internet.html">インターネット企業</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>面接対策</h4>
-                    <ul>
-                        <li><a href="motivation.html">志望動機</a></li>
-                        <li><a href="reverse-questions.html">逆質問</a></li>
-                        <li><a href="student-achievements.html">学生時代の成果</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 就職・転職まとめ＠面接対策. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer will be loaded here -->
+    <div id="footer-container"></div>
 
+    <script src="js/common.js"></script>
     <script src="js/script.js"></script>
     <script src="js/reading-progress.js"></script>
 </body>

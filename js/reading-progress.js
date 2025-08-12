@@ -296,32 +296,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     addBackToTop();
     
-    // Print functionality
-    function addPrintButton() {
-        const printButton = document.createElement('button');
-        printButton.innerHTML = '<i class="fas fa-print"></i> 印刷';
-        printButton.style.cssText = `
-            background: #6c757d;
-            color: white;
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 0.9rem;
-            margin: 1rem 0;
-        `;
-        
-        printButton.addEventListener('click', () => {
-            window.print();
-        });
-        
-        const articleHeader = document.querySelector('.article-header');
-        if (articleHeader) {
-            articleHeader.appendChild(printButton);
-        }
-    }
-    
-    addPrintButton();
 });
 
 // Add CSS for active TOC items
