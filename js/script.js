@@ -21,9 +21,53 @@ document.addEventListener('DOMContentLoaded', function() {
     const tabButtons = document.querySelectorAll('.tab-button');
     const tabContents = document.querySelectorAll('.tab-content');
 
+    // Function to activate a specific tab
+    function activateTab(tabName) {
+        const targetButton = document.querySelector(`.tab-button[data-tab="${tabName}"]`);
+        const targetContent = document.getElementById(tabName);
+        
+        if (targetButton && targetContent) {
+            // Remove active class from all buttons and contents
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            tabContents.forEach(content => content.classList.remove('active'));
+            
+            // Add active class to the target tab
+            targetButton.classList.add('active');
+            targetContent.classList.add('active');
+            return true;
+        }
+        return false;
+    }
+
+    // Check URL hash for industry tab on page load and hash change
+    function checkHashForIndustryTab() {
+        const hash = window.location.hash;
+        if (hash.startsWith('#industry-guide-')) {
+            const tabName = hash.replace('#industry-guide-', '');
+            if (activateTab(tabName)) {
+                // Scroll to industry guide section
+                const industrySection = document.getElementById('industry-guide');
+                if (industrySection) {
+                    setTimeout(() => {
+                        industrySection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
+        }
+    }
+
+    // Check on page load
+    checkHashForIndustryTab();
+    
+    // Check on hash change
+    window.addEventListener('hashchange', checkHashForIndustryTab);
+
     tabButtons.forEach(button => {
         button.addEventListener('click', function() {
             const targetTab = this.getAttribute('data-tab');
+            
+            // Update URL hash when tab is clicked
+            history.replaceState(null, null, '#industry-guide-' + targetTab);
             
             // Remove active class from all buttons and contents
             tabButtons.forEach(btn => btn.classList.remove('active'));

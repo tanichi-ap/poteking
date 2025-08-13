@@ -15,9 +15,18 @@
       "Bash(if [ -f \"$file\" ])",
       "Bash(then)",
       "Bash(sed:*)",
-      "Bash(git checkout:*)"
+      "Bash(git checkout:*)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(move \"consulting-big4-new.html\" \"consulting-big4.html\")",
+      "Bash(mv:*)",
+      "Bash(for file in media-*.html)",
+      "Bash(do echo \"=== $file ===\")",
+      "Bash(for file in consulting-*.html media-*.html)",
+      "Bash(then sed -i 's|href=\"\"/#industry-guide\"\"|href=\"\"/#industry-guide-consulting\"\"|' \"$file\")"
     ],
     "deny": [],
-    "ask": []
+    "ask": [],
+    "defaultMode": "acceptEdits"
   }
 }

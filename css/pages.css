@@ -232,10 +232,8 @@
 /* Enhanced spacing for h4 elements in content areas */
 .answer-box h4, 
 .tips h4, 
-.strategy-content h4,
 .method-content h4,
-.prep-content h4,
-.answer-strategy h4 {
+.prep-content h4 {
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     color: #2c3e50;
@@ -246,13 +244,12 @@
 /* Specific spacing for content that follows h4 elements */
 .answer-box h4 + p,
 .tips h4 + ul,
-.strategy-content h4 + ul,
 .method-content h4 + ul,
 .prep-content h4 + ul {
     margin-top: 0.8rem;
 }
 
-.strategy-box, .example-box {
+.example-box {
     margin-top: 1.2rem;
 }
 

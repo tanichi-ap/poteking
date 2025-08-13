@@ -1,0 +1,520 @@
+/* IT・インターネット企業ページ専用テーマ */
+
+/* カラーパレット定義 */
+:root {
+    --primary-green: #068200;
+    --primary-green-light: #0b7c01;
+    --primary-green-bg: #f0f8f0;
+    
+    --accent-blue: #2563eb;
+    --accent-blue-light: #3b82f6;
+    --accent-blue-bg: #eff6ff;
+    
+    --accent-purple: #7c3aed;
+    --accent-purple-light: #8b5cf6;
+    --accent-purple-bg: #f5f3ff;
+    
+    --accent-orange: #f97316;
+    --accent-orange-light: #fb923c;
+    --accent-orange-bg: #fff7ed;
+}
+
+/* ヘッダーグラデーション */
+.article-header {
+    background: linear-gradient(135deg, 
+        var(--primary-green-bg) 0%, 
+        var(--accent-blue-bg) 50%, 
+        var(--accent-purple-bg) 100%);
+    border-top: 3px solid transparent;
+    border-image: linear-gradient(90deg, 
+        var(--primary-green) 0%, 
+        var(--accent-blue) 50%, 
+        var(--accent-purple) 100%);
+    border-image-slice: 1;
+}
+
+/* 目次のカスタマイズ */
+.table-of-contents {
+    background: linear-gradient(135deg, var(--accent-blue-bg), #ffffff);
+    border-left: 4px solid var(--accent-blue);
+    position: relative;
+    overflow: hidden;
+}
+
+.table-of-contents::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, var(--accent-purple-light) 0%, transparent 70%);
+    opacity: 0.1;
+}
+
+.table-of-contents h3 {
+    color: var(--accent-blue);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.table-of-contents h3 i {
+    color: var(--accent-purple);
+}
+
+/* セクション見出しのカラーリング */
+.content-section:nth-child(odd) h2 {
+    color: var(--primary-green);
+    border-bottom: 2px solid var(--primary-green);
+    padding-bottom: 0.5rem;
+}
+
+.content-section:nth-child(even) h2 {
+    color: var(--accent-blue);
+    border-bottom: 2px solid var(--accent-blue);
+    padding-bottom: 0.5rem;
+}
+
+/* カード要素のホバーエフェクト */
+.tip-box {
+    background: linear-gradient(135deg, #ffffff, var(--primary-green-bg));
+    border-left: 4px solid var(--primary-green);
+    transition: all 0.3s ease;
+}
+
+.tip-box:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 20px rgba(6, 130, 0, 0.15);
+}
+
+/* 警告・注意ボックス */
+.warning-box {
+    background: linear-gradient(135deg, var(--accent-orange-bg), #ffffff);
+    border-left: 4px solid var(--accent-orange);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+}
+
+.warning-box h3 {
+    color: var(--accent-orange);
+    margin-top: 0;
+}
+
+/* 重要ポイントボックス */
+.important-box {
+    background: linear-gradient(135deg, var(--accent-purple-bg), #ffffff);
+    border-left: 4px solid var(--accent-purple);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+}
+
+.important-box h3 {
+    color: var(--accent-purple);
+    margin-top: 0;
+}
+
+/* テクノロジーセクション */
+.tech-section {
+    background: linear-gradient(135deg, var(--accent-blue-bg), #ffffff);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+    border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+.tech-section h3 {
+    color: var(--accent-blue);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tech-section h3::before {
+    content: "💻";
+    font-size: 1.2em;
+}
+
+/* イノベーションセクション */
+.innovation-section {
+    background: linear-gradient(135deg, var(--accent-purple-bg), #ffffff);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+    border: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+.innovation-section h3 {
+    color: var(--accent-purple);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.innovation-section h3::before {
+    content: "🚀";
+    font-size: 1.2em;
+}
+
+/* リストアイテムのカスタマイズ */
+.content-section ul li {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+/* 青い三角は通常のコンテンツセクションのみに適用 */
+.content-section:not(.innovation-section) ul li::before {
+    content: "▶";
+    position: absolute;
+    left: 0;
+    color: var(--accent-blue);
+    font-size: 0.8em;
+    top: 0.3em;
+}
+
+/* イノベーションセクション内のリストは三角なし */
+.innovation-section ul li::before {
+    display: none;
+}
+
+/* 緑色の枠線を持つボックス内のリストも三角なし */
+.tip-box ul li::before,
+.impression-points ul li::before {
+    display: none;
+}
+
+/* impression-points内のリストの余白調整 */
+.impression-points ul {
+    padding-left: 0;
+    margin-left: 0;
+    list-style: none;
+}
+
+.impression-points ul li {
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+}
+
+.innovation-section .impression-points ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.innovation-section .impression-points ul li {
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+}
+
+/* element-content内のulも同様に調整 */
+.element-content ul {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    list-style: none !important;
+}
+
+.element-content ul li {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    position: relative !important;
+}
+
+/* point-card内のelement-contentの調整 */
+.point-card .element-content {
+    padding-left: 0;
+}
+
+.point-card .element-content ul {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+.point-card .element-content ul li {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+/* CTAボタンのグラデーション */
+.cta-button {
+    background: linear-gradient(135deg, var(--primary-green), var(--accent-blue));
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(6, 130, 0, 0.3);
+}
+
+.cta-button:hover {
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
+
+/* ハイライトテキスト - 緑と赤の2色のみ */
+.highlight-green {
+    background: linear-gradient(transparent 60%, rgba(6, 130, 0, 0.2) 60%);
+    padding: 0 0.2rem;
+}
+
+.highlight-blue {
+    background: linear-gradient(transparent 60%, rgba(6, 130, 0, 0.2) 60%);
+    padding: 0 0.2rem;
+}
+
+.highlight-purple {
+    background: linear-gradient(transparent 60%, rgba(6, 130, 0, 0.2) 60%);
+    padding: 0 0.2rem;
+}
+
+.highlight-orange {
+    background: linear-gradient(transparent 60%, rgba(244, 67, 54, 0.3) 60%);
+    padding: 0 0.2rem;
+    font-weight: 600;
+}
+
+/* サイドバーのカスタマイズ */
+.related-articles {
+    background: linear-gradient(135deg, var(--primary-green-bg), var(--accent-blue-bg));
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid rgba(6, 130, 0, 0.2);
+}
+
+.related-articles h3 {
+    color: var(--primary-green);
+    border-bottom: 2px solid var(--accent-blue);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.related-articles .article-link {
+    display: block;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    background: white;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+}
+
+.related-articles .article-link:hover {
+    border-left-color: var(--accent-purple);
+    background: var(--accent-purple-bg);
+    transform: translateX(5px);
+}
+
+/* アイコン付きリスト */
+.icon-list {
+    list-style: none;
+    padding: 0;
+}
+
+.icon-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #ffffff, var(--accent-blue-bg));
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.icon-list li:hover {
+    background: linear-gradient(135deg, var(--accent-blue-bg), var(--accent-purple-bg));
+    transform: translateX(5px);
+}
+
+.icon-list .icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+}
+
+/* プログレスインジケーター */
+.progress-indicator {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    padding: 1rem;
+    background: var(--accent-blue-bg);
+    border-radius: 12px;
+}
+
+.progress-step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.progress-step.active .step-number {
+    background: linear-gradient(135deg, var(--primary-green), var(--accent-blue));
+    color: white;
+}
+
+.progress-step.completed .step-number {
+    background: var(--primary-green);
+    color: white;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #e5e7eb;
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0.5rem;
+    font-weight: bold;
+}
+
+/* タグ・バッジ */
+.tech-badge {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.tech-badge.green {
+    background: var(--primary-green-bg);
+    color: var(--primary-green);
+    border: 1px solid var(--primary-green);
+}
+
+.tech-badge.blue {
+    background: var(--accent-blue-bg);
+    color: var(--accent-blue);
+    border: 1px solid var(--accent-blue);
+}
+
+.tech-badge.purple {
+    background: var(--accent-purple-bg);
+    color: var(--accent-purple);
+    border: 1px solid var(--accent-purple);
+}
+
+.tech-badge.orange {
+    background: var(--accent-orange-bg);
+    color: var(--accent-orange);
+    border: 1px solid var(--accent-orange);
+}
+
+/* サイドバーのタグセクション */
+.sidebar .tags {
+    background: linear-gradient(135deg, var(--accent-blue-bg), #ffffff);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+.sidebar .tags h3 {
+    color: var(--accent-blue);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sidebar .tags .tag {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    margin: 0.25rem;
+    background: linear-gradient(135deg, #ffffff, var(--accent-purple-bg));
+    border: 1px solid var(--accent-purple);
+    border-radius: 20px;
+    color: var(--accent-purple);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.sidebar .tags .tag:hover {
+    background: var(--accent-purple);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(124, 58, 237, 0.3);
+}
+
+/* サイドバーのシェアセクション */
+.sidebar .social-share {
+    background: linear-gradient(135deg, var(--primary-green-bg), var(--accent-orange-bg));
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(249, 115, 22, 0.2);
+}
+
+.sidebar .social-share h3 {
+    color: var(--accent-orange);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sidebar .social-share .share-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.sidebar .social-share .share-btn {
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.sidebar .social-share .share-btn.twitter {
+    background: #1DA1F2;
+    color: white;
+}
+
+.sidebar .social-share .share-btn.facebook {
+    background: #1877F2;
+    color: white;
+}
+
+.sidebar .social-share .share-btn.line {
+    background: #00B900;
+    color: white;
+}
+
+.sidebar .social-share .share-btn.copy {
+    background: var(--accent-purple);
+    color: white;
+}
+
+.sidebar .social-share .share-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+}
