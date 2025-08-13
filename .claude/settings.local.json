@@ -3,7 +3,19 @@
     "allow": [
       "Bash(python:*)",
       "Bash(del:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(for file in ai-resume-optimization.html ai-portfolio-creation.html ai-salary-negotiation.html ai-career-planning.html)",
+      "Bash(do if [ -f \"$file\" ])",
+      "Bash(then sed -i 's|<link rel=\"\"stylesheet\"\" href=\"\"css/pages.css\"\">|<link rel=\"\"stylesheet\"\" href=\"\"css/pages.css\"\">\\n    <link rel=\"\"stylesheet\"\" href=\"\"css/page-enhancements.css\"\">|' \"$file\")",
+      "Bash(echo:*)",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(for file in consulting-business.html consulting-it.html consulting-big4.html consulting-boutique.html consulting-thinktank.html)",
+      "Bash(do)",
+      "Bash(if [ -f \"$file\" ])",
+      "Bash(then)",
+      "Bash(sed:*)",
+      "Bash(git checkout:*)"
     ],
     "deny": [],
     "ask": []

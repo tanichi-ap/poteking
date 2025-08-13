@@ -18,6 +18,17 @@ body {
     padding: 0 20px;
 }
 
+/* PR Label */
+.pr-label {
+    font-size: 0.7em;
+    color: #666;
+}
+
+/* Utility Classes */
+.mt-3 {
+    margin-top: 3rem;
+}
+
 /* Header and Navigation */
 .header {
     background: linear-gradient(135deg, #068200, #0b7c01);
