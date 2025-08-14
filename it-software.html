@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pages.css">
     <link rel="stylesheet" href="css/page-enhancements.css">
+    <link rel="stylesheet" href="css/common-theme.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
@@ -59,7 +60,7 @@
                         <li><a href="/#interview-prep">面接対策</a></li>
                         <li><a href="/#industry-guide">業界別対策</a></li>
                         <li><a href="/#job-sites">求人サイト</a></li>
-                        <li><a href="/#programming-schools">プログラミング学校</a></li>
+                        <li><a href="/#programming-schools"><span class="important-term">プログラミング</span>学校</a></li>
                         <li><a href="/#resources">リソース</a></li>
                     </ul>
                 </div>
@@ -83,7 +84,7 @@
             <article class="article">
                     <header class="article-header">
                         <h1>ソフトウェア開発企業の面接対策</h1>
-                        <p class="article-subtitle">マイクロソフト、オラクル、サイボウズなどソフトウェア開発企業への転職・就職を目指す方必見！コーディング面接、システム設計、アルゴリズム、データ構造、アジャイル開発など、ソフトウェア開発業界が求める人材像と面接での評価ポイントを徹底攻略。ソフトウェアエンジニアとして活躍するための面接準備法</p>
+                        <p class="article-subtitle">マイクロソフト、オラクル、サイボウズなどソフトウェア開発企業への転職・就職を目指す方必見！<span class="important-term">コーディング面接</span>、<span class="important-term">システム設計</span>、アルゴリズム、データ構造、アジャイル開発など、ソフトウェア開発業界が求める人材像と面接での評価ポイントを徹底攻略。ソフトウェアエンジニアとして活躍するための面接準備法</p>
                     </header>
 
                     <div class="table-of-contents">
@@ -91,8 +92,8 @@
                         <ul class="toc-list">
                             <li><a href="#industry-landscape">ソフトウェア開発業界の概況</a></li>
                             <li><a href="#interview-process">面接プロセスと評価基準</a></li>
-                            <li><a href="#coding-interview">コーディング面接対策</a></li>
-                            <li><a href="#system-design">システム設計面接</a></li>
+                            <li><a href="#coding-interview"><span class="most-important-term">コーディング面接</span>対策</a></li>
+                            <li><a href="#system-design"><span class="important-term">システム設計</span>面接</a></li>
                             <li><a href="#tech-stack">技術スタック別対策</a></li>
                             <li><a href="#behavioral-questions">行動面接の準備</a></li>
                             <li><a href="#portfolio-tips">ポートフォリオ作成指南</a></li>
@@ -108,7 +109,7 @@
                             <h3>業界の分類と特徴</h3>
                             <div class="industry-customization">
                                 <div class="industry-card">
-                                    <h4><i class="fas fa-building"></i> 大手システムインテグレーター</h4>
+                                    <h3><i class="fas fa-building"></i> 大手システムインテグレーター</h3>
                                     <div class="industry-content">
                                         <h5>特徴</h5>
                                         <ul>
@@ -129,7 +130,7 @@
                                 </div>
 
                                 <div class="industry-card">
-                                    <h4><i class="fas fa-rocket"></i> スタートアップ・ベンチャー</h4>
+                                    <h3><i class="fas fa-rocket"></i> スタートアップ・ベンチャー</h3>
                                     <div class="industry-content">
                                         <h5>特徴</h5>
                                         <ul>
@@ -150,7 +151,7 @@
                                 </div>
 
                                 <div class="industry-card">
-                                    <h4><i class="fas fa-cogs"></i> プロダクト開発企業</h4>
+                                    <h3><i class="fas fa-cogs"></i> プロダクト開発企業</h3>
                                     <div class="industry-content">
                                         <h5>特徴</h5>
                                         <ul>
@@ -177,7 +178,7 @@
                                     <div class="point-icon">
                                         <i class="fas fa-cloud"></i>
                                     </div>
-                                    <h4>クラウドネイティブ開発</h4>
+                                    <h3>クラウドネイティブ開発</h3>
                                     <ul>
                                         <li>マイクロサービスアーキテクチャ</li>
                                         <li>コンテナ化（Docker、Kubernetes）</li>
@@ -190,7 +191,7 @@
                                     <div class="point-icon">
                                         <i class="fas fa-mobile-alt"></i>
                                     </div>
-                                    <h4>フロントエンド進化</h4>
+                                    <h3>フロントエンド進化</h3>
                                     <ul>
                                         <li>React、Vue.js、Angular の成熟</li>
                                         <li>TypeScript の標準化</li>
@@ -203,7 +204,7 @@
                                     <div class="point-icon">
                                         <i class="fas fa-robot"></i>
                                     </div>
-                                    <h4>AI/ML統合</h4>
+                                    <h3>AI/ML統合</h3>
                                     <ul>
                                         <li>機械学習モデルの組み込み</li>
                                         <li>MLOps・モデル運用</li>
@@ -223,7 +224,7 @@
                                 <div class="industry-card">
                                     <h3><i class="fas fa-code"></i> 技術スクリーニング</h3>
                                     <div class="industry-content">
-                                        <h4>形式と内容</h4>
+                                        <h3>形式と内容</h3>
                                         <ul>
                                             <li><strong>オンラインコーディング：</strong>HackerRank、Codility等</li>
                                             <li><strong>時間制限：</strong>1-3時間程度</li>
@@ -231,7 +232,7 @@
                                             <li><strong>評価基準：</strong>正確性、効率性、コード品質</li>
                                         </ul>
                                         
-                                        <h4>対策ポイント</h4>
+                                        <h3>対策ポイント</h3>
                                         <ul>
                                             <li>基本的なアルゴリズムの習得</li>
                                             <li>時間管理・優先順位付け</li>
@@ -244,7 +245,7 @@
                                 <div class="industry-card">
                                     <h3><i class="fas fa-laptop-code"></i> 技術面接（コーディング）</h3>
                                     <div class="industry-content">
-                                        <h4>形式と内容</h4>
+                                        <h3>形式と内容</h3>
                                         <ul>
                                             <li><strong>ライブコーディング：</strong>面接官との対話形式</li>
                                             <li><strong>時間：</strong>45-60分</li>
@@ -252,7 +253,7 @@
                                             <li><strong>評価：</strong>思考プロセス、コミュニケーション</li>
                                         </ul>
                                         
-                                        <h4>対策ポイント</h4>
+                                        <h3>対策ポイント</h3>
                                         <ul>
                                             <li>思考プロセスの言語化</li>
                                             <li>質問・確認の積極的実施</li>
@@ -263,9 +264,9 @@
                                 </div>
 
                                 <div class="industry-card">
-                                    <h3><i class="fas fa-sitemap"></i> システム設計面接</h3>
+                                    <h3><i class="fas fa-sitemap"></i> <span class="important-term">システム設計</span>面接</h3>
                                     <div class="industry-content">
-                                        <h4>形式と内容</h4>
+                                        <h3>形式と内容</h3>
                                         <ul>
                                             <li><strong>設計問題：</strong>大規模システムの設計</li>
                                             <li><strong>時間：</strong>45-60分</li>
@@ -273,7 +274,7 @@
                                             <li><strong>コミュニケーション：</strong>設計判断の説明</li>
                                         </ul>
                                         
-                                        <h4>対策ポイント</h4>
+                                        <h3>対策ポイント</h3>
                                         <ul>
                                             <li>要件の明確化・優先順位付け</li>
                                             <li>容量見積もり・制約の理解</li>
@@ -286,7 +287,7 @@
                                 <div class="industry-card">
                                     <h3><i class="fas fa-users"></i> 行動面接</h3>
                                     <div class="industry-content">
-                                        <h4>形式と内容</h4>
+                                        <h3>形式と内容</h3>
                                         <ul>
                                             <li><strong>STAR法：</strong>状況・課題・行動・結果</li>
                                             <li><strong>評価項目：</strong>リーダーシップ、協調性、問題解決</li>
@@ -294,7 +295,7 @@
                                             <li><strong>キャリア：</strong>成長意欲・将来展望</li>
                                         </ul>
                                         
-                                        <h4>対策ポイント</h4>
+                                        <h3>対策ポイント</h3>
                                         <ul>
                                             <li>具体的なエピソードの準備</li>
                                             <li>定量的な成果の説明</li>
@@ -309,13 +310,13 @@
                         <hr class="section-divider">
 
                         <section id="coding-interview" class="content-section">
-                            <h2><i class="fas fa-terminal"></i> コーディング面接対策</h2>
+                            <h2><i class="fas fa-terminal"></i> <span class="most-important-term">コーディング面接</span>対策</h2>
 
                             <div class="coding-prep">
                                 <div class="prep-category">
                                     <h3><i class="fas fa-book"></i> 基礎アルゴリズム・データ構造</h3>
                                     <div class="prep-content">
-                                        <h4>必須項目</h4>
+                                        <h3>必須項目</h3>
                                         <div class="algorithm-list">
                                             <div class="algo-section">
                                                 <h5>データ構造</h5>
@@ -333,14 +334,14 @@
                                                 <ul>
                                                     <li><strong>ソート：</strong>クイック、マージ、ヒープソート</li>
                                                     <li><strong>探索：</strong>二分探索、DFS、BFS</li>
-                                                    <li><strong>動的プログラミング：</strong>メモ化、最適部分構造</li>
+                                                    <li><strong>動的<span class="important-term">プログラミング</span>：</strong>メモ化、最適部分構造</li>
                                                     <li><strong>グリーディ：</strong>局所最適解、証明方法</li>
                                                     <li><strong>分割統治：</strong>問題の分解と統合</li>
                                                 </ul>
                                             </div>
                                         </div>
                                         
-                                        <h4>計算量解析</h4>
+                                        <h3>計算量解析</h3>
                                         <ul>
                                             <li><strong>時間計算量：</strong>O(1), O(log n), O(n), O(n log n), O(n²)</li>
                                             <li><strong>空間計算量：</strong>メモリ使用量の評価</li>
@@ -353,15 +354,15 @@
                                 <div class="prep-category">
                                     <h3><i class="fas fa-puzzle-piece"></i> 頻出問題パターン</h3>
                                     <div class="prep-content">
-                                        <h4>文字列処理</h4>
+                                        <h3>文字列処理</h3>
                                         <ul>
                                             <li><strong>パターンマッチング：</strong>KMP、Boyer-Moore</li>
                                             <li><strong>回文判定：</strong>マナカー法、中心拡張</li>
                                             <li><strong>文字列変換：</strong>編集距離、最長共通部分列</li>
-                                            <li><strong>正規表現：</strong>有限オートマトン、動的プログラミング</li>
+                                            <li><strong>正規表現：</strong>有限オートマトン、動的<span class="important-term">プログラミング</span></li>
                                         </ul>
                                         
-                                        <h4>数値・数学</h4>
+                                        <h3>数値・数学</h3>
                                         <ul>
                                             <li><strong>素数判定：</strong>エラトステネスの篩、ミラーラビン</li>
                                             <li><strong>最大公約数：</strong>ユークリッドの互除法</li>
@@ -369,7 +370,7 @@
                                             <li><strong>数論：</strong>モジュラー演算、中国剰余定理</li>
                                         </ul>
                                         
-                                        <h4>グラフアルゴリズム</h4>
+                                        <h3>グラフアルゴリズム</h3>
                                         <ul>
                                             <li><strong>最短経路：</strong>ダイクストラ、ベルマンフォード</li>
                                             <li><strong>最小全域木：</strong>クラスカル、プリム</li>
@@ -382,7 +383,7 @@
                                 <div class="prep-category">
                                     <h3><i class="fas fa-dumbbell"></i> 練習方法と戦略</h3>
                                     <div class="prep-content">
-                                        <h4>効果的な学習法</h4>
+                                        <h3>効果的な学習法</h3>
                                         <ul>
                                             <li><strong>段階的習得：</strong>易しい問題から段階的にレベルアップ</li>
                                             <li><strong>パターン認識：</strong>類似問題の解法パターン習得</li>
@@ -390,15 +391,15 @@
                                             <li><strong>説明練習：</strong>解法を他者に説明する練習</li>
                                         </ul>
                                         
-                                        <h4>おすすめプラットフォーム</h4>
+                                        <h3>おすすめプラットフォーム</h3>
                                         <ul>
                                             <li><strong>LeetCode：</strong>企業別問題、面接頻出問題</li>
-                                            <li><strong>AtCoder：</strong>競技プログラミング、アルゴリズム強化</li>
+                                            <li><strong>AtCoder：</strong>競技<span class="important-term">プログラミング</span>、アルゴリズム強化</li>
                                             <li><strong>HackerRank：</strong>スキル評価、企業課題</li>
                                             <li><strong>Codility：</strong>実際の採用試験形式</li>
                                         </ul>
                                         
-                                        <h4>面接当日のコツ</h4>
+                                        <h3>面接当日のコツ</h3>
                                         <ul>
                                             <li><strong>問題理解：</strong>仕様・制約の確認質問</li>
                                             <li><strong>アプローチ説明：</strong>解法の方針を先に説明</li>
@@ -413,14 +414,14 @@
                         <hr class="section-divider">
 
                         <section id="system-design" class="content-section">
-                            <h2><i class="fas fa-drafting-compass"></i> システム設計面接</h2>
+                            <h2><i class="fas fa-drafting-compass"></i> <span class="important-term">システム設計</span>面接</h2>
 
                             <div class="system-design-prep">
                                 <div class="design-framework">
                                     <h3><i class="fas fa-route"></i> 設計アプローチフレームワーク</h3>
                                     <div class="framework-steps">
                                         <div class="step">
-                                            <h4>1. 要件の明確化（5-10分）</h4>
+                                            <h3>1. 要件の明確化（5-10分）</h3>
                                             <ul>
                                                 <li><strong>機能要件：</strong>どのような機能が必要か</li>
                                                 <li><strong>非機能要件：</strong>ユーザー数、データ量、性能</li>
@@ -430,7 +431,7 @@
                                         </div>
                                         
                                         <div class="step">
-                                            <h4>2. 容量見積もり（5分）</h4>
+                                            <h3>2. 容量見積もり（5分）</h3>
                                             <ul>
                                                 <li><strong>ユーザー数：</strong>DAU、MAU、同時接続数</li>
                                                 <li><strong>データ量：</strong>読み書き頻度、ストレージ容量</li>
@@ -440,7 +441,7 @@
                                         </div>
                                         
                                         <div class="step">
-                                            <h4>3. 高レベル設計（10-15分）</h4>
+                                            <h3>3. 高レベル設計（10-15分）</h3>
                                             <ul>
                                                 <li><strong>アーキテクチャ概要：</strong>主要コンポーネント</li>
                                                 <li><strong>データフロー：</strong>リクエスト処理の流れ</li>
@@ -450,7 +451,7 @@
                                         </div>
                                         
                                         <div class="step">
-                                            <h4>4. 詳細設計（15-20分）</h4>
+                                            <h3>4. 詳細設計（15-20分）</h3>
                                             <ul>
                                                 <li><strong>スケーラビリティ：</strong>負荷分散、シャーディング</li>
                                                 <li><strong>可用性：</strong>冗長化、フェイルオーバー</li>
@@ -460,7 +461,7 @@
                                         </div>
                                         
                                         <div class="step">
-                                            <h4>5. まとめ・追加考慮（5分）</h4>
+                                            <h3>5. まとめ・追加考慮（5分）</h3>
                                             <ul>
                                                 <li><strong>監視・ログ：</strong>メトリクス、アラート</li>
                                                 <li><strong>運用・保守：</strong>デプロイ、バックアップ</li>
@@ -475,7 +476,7 @@
                                     <h3><i class="fas fa-cubes"></i> よくある設計パターン</h3>
                                     <div class="pattern-categories">
                                         <div class="pattern-category">
-                                            <h4><i class="fas fa-layer-group"></i> アーキテクチャパターン</h4>
+                                            <h3><i class="fas fa-layer-group"></i> アーキテクチャパターン</h3>
                                             <ul>
                                                 <li><strong>マイクロサービス：</strong>サービス分割、API Gateway</li>
                                                 <li><strong>イベント駆動：</strong>非同期処理、メッセージキュー</li>
@@ -485,7 +486,7 @@
                                         </div>
                                         
                                         <div class="pattern-category">
-                                            <h4><i class="fas fa-database"></i> データ管理パターン</h4>
+                                            <h3><i class="fas fa-database"></i> データ管理パターン</h3>
                                             <ul>
                                                 <li><strong>シャーディング：</strong>水平分割、一貫性ハッシュ</li>
                                                 <li><strong>レプリケーション：</strong>マスタースレーブ、読み書き分散</li>
@@ -495,7 +496,7 @@
                                         </div>
                                         
                                         <div class="pattern-category">
-                                            <h4><i class="fas fa-shield-alt"></i> 信頼性パターン</h4>
+                                            <h3><i class="fas fa-shield-alt"></i> 信頼性パターン</h3>
                                             <ul>
                                                 <li><strong>サーキットブレーカー：</strong>障害の連鎖防止</li>
                                                 <li><strong>リトライ・バックオフ：</strong>一時的障害への対応</li>
@@ -510,17 +511,17 @@
                                     <h3><i class="fas fa-lightbulb"></i> 典型的な設計問題</h3>
                                     <div class="problem-examples">
                                         <div class="problem">
-                                            <h4>URL短縮サービス（bit.ly類似）</h4>
+                                            <h3>URL短縮サービス（bit.ly類似）</h3>
                                             <p><strong>要件：</strong>長いURLを短縮、リダイレクト、統計情報</p>
                                             <p><strong>技術要素：</strong>ハッシュ関数、キャッシュ、分析DB</p>
                                         </div>
                                         <div class="problem">
-                                            <h4>ソーシャルメディアフィード</h4>
+                                            <h3>ソーシャルメディアフィード</h3>
                                             <p><strong>要件：</strong>投稿、フォロー、タイムライン表示</p>
                                             <p><strong>技術要素：</strong>fanout、ランキング、リアルタイム更新</p>
                                         </div>
                                         <div class="problem">
-                                            <h4>チャットアプリケーション</h4>
+                                            <h3>チャットアプリケーション</h3>
                                             <p><strong>要件：</strong>リアルタイムメッセージ、グループチャット</p>
                                             <p><strong>技術要素：</strong>WebSocket、メッセージキュー、通知</p>
                                         </div>
@@ -538,7 +539,7 @@
                                 <div class="stack-card">
                                     <h3><i class="fab fa-js-square"></i> JavaScript/Node.js</h3>
                                     <div class="stack-content">
-                                        <h4>重要な技術要素</h4>
+                                        <h3>重要な技術要素</h3>
                                         <ul>
                                             <li><strong>ES6+：</strong>Arrow Function、Promise、async/await</li>
                                             <li><strong>フレームワーク：</strong>React、Vue.js、Angular</li>
@@ -546,7 +547,7 @@
                                             <li><strong>TypeScript：</strong>型安全性、大規模開発</li>
                                         </ul>
                                         
-                                        <h4>面接での重要ポイント</h4>
+                                        <h3>面接での重要ポイント</h3>
                                         <ul>
                                             <li>イベントループ・非同期処理の理解</li>
                                             <li>クロージャ・スコープの概念</li>
@@ -559,7 +560,7 @@
                                 <div class="stack-card">
                                     <h3><i class="fab fa-python"></i> Python</h3>
                                     <div class="stack-content">
-                                        <h4>重要な技術要素</h4>
+                                        <h3>重要な技術要素</h3>
                                         <ul>
                                             <li><strong>Webフレームワーク：</strong>Django、Flask、FastAPI</li>
                                             <li><strong>データ処理：</strong>NumPy、Pandas、Scikit-learn</li>
@@ -567,7 +568,7 @@
                                             <li><strong>テスト：</strong>pytest、unittest、mock</li>
                                         </ul>
                                         
-                                        <h4>面接での重要ポイント</h4>
+                                        <h3>面接での重要ポイント</h3>
                                         <ul>
                                             <li>GIL（Global Interpreter Lock）の理解</li>
                                             <li>メモリ管理・ガベージコレクション</li>
@@ -580,7 +581,7 @@
                                 <div class="stack-card">
                                     <h3><i class="fab fa-java"></i> Java</h3>
                                     <div class="stack-content">
-                                        <h4>重要な技術要素</h4>
+                                        <h3>重要な技術要素</h3>
                                         <ul>
                                             <li><strong>フレームワーク：</strong>Spring Boot、Spring Cloud</li>
                                             <li><strong>マイクロサービス：</strong>Netflix OSS、Eureka</li>
@@ -588,7 +589,7 @@
                                             <li><strong>ビルドツール：</strong>Maven、Gradle</li>
                                         </ul>
                                         
-                                        <h4>面接での重要ポイント</h4>
+                                        <h3>面接での重要ポイント</h3>
                                         <ul>
                                             <li>JVM・ガベージコレクションの最適化</li>
                                             <li>並行処理・スレッドセーフティ</li>
@@ -601,7 +602,7 @@
                                 <div class="stack-card">
                                     <h3><i class="fab fa-golang"></i> Go</h3>
                                     <div class="stack-content">
-                                        <h4>重要な技術要素</h4>
+                                        <h3>重要な技術要素</h3>
                                         <ul>
                                             <li><strong>並行処理：</strong>Goroutine、Channel</li>
                                             <li><strong>Webフレームワーク：</strong>Gin、Echo、Fiber</li>
@@ -609,7 +610,7 @@
                                             <li><strong>クラウドネイティブ：</strong>Kubernetes、Docker</li>
                                         </ul>
                                         
-                                        <h4>面接での重要ポイント</h4>
+                                        <h3>面接での重要ポイント</h3>
                                         <ul>
                                             <li>Goroutineの動作原理・スケジューリング</li>
                                             <li>インターフェース・型システム</li>
@@ -631,19 +632,19 @@
                                     <h3><i class="fas fa-star"></i> STAR法の活用</h3>
                                     <div class="star-breakdown">
                                         <div class="star-element">
-                                            <h4>Situation（状況）</h4>
+                                            <h3>Situation（状況）</h3>
                                             <p>どのような状況・背景だったかを簡潔に説明</p>
                                         </div>
                                         <div class="star-element">
-                                            <h4>Task（課題）</h4>
+                                            <h3>Task（課題）</h3>
                                             <p>あなたが担当した具体的な課題・責任</p>
                                         </div>
                                         <div class="star-element">
-                                            <h4>Action（行動）</h4>
+                                            <h3>Action（行動）</h3>
                                             <p>課題解決のために取った具体的な行動</p>
                                         </div>
                                         <div class="star-element">
-                                            <h4>Result（結果）</h4>
+                                            <h3>Result（結果）</h3>
                                             <p>行動の結果として得られた成果・学び</p>
                                         </div>
                                     </div>
@@ -653,7 +654,7 @@
                                     <h3><i class="fas fa-question"></i> 頻出質問と回答戦略</h3>
                                     <div class="question-categories">
                                         <div class="q-category">
-                                            <h4><i class="fas fa-wrench"></i> 技術的チャレンジ</h4>
+                                            <h3><i class="fas fa-wrench"></i> 技術的チャレンジ</h3>
                                             <div class="question-item">
                                                 <h5>Q: 最も困難だった技術的課題について教えてください</h5>
                                                 <div class="answer-tips">
@@ -682,7 +683,7 @@
                                         </div>
 
                                         <div class="q-category">
-                                            <h4><i class="fas fa-users"></i> チームワーク・協働</h4>
+                                            <h3><i class="fas fa-users"></i> チームワーク・協働</h3>
                                             <div class="question-item">
                                                 <h5>Q: チーム内で意見が対立した時、どう対処しましたか？</h5>
                                                 <div class="answer-tips">
@@ -698,7 +699,7 @@
                                         </div>
 
                                         <div class="q-category">
-                                            <h4><i class="fas fa-clock"></i> プロジェクト管理</h4>
+                                            <h3><i class="fas fa-clock"></i> プロジェクト管理</h3>
                                             <div class="question-item">
                                                 <h5>Q: 厳しい締切のプロジェクトをどう管理しましたか？</h5>
                                                 <div class="answer-tips">
@@ -727,7 +728,7 @@
                                     <h3><i class="fas fa-star"></i> 必須要素</h3>
                                     <div class="essential-items">
                                         <div class="item-card">
-                                            <h4><i class="fab fa-github"></i> GitHubプロフィール</h4>
+                                            <h3><i class="fab fa-github"></i> GitHubプロフィール</h3>
                                             <ul>
                                                 <li><strong>アクティビティ：</strong>継続的なコミット履歴</li>
                                                 <li><strong>コード品質：</strong>可読性・ドキュメント充実</li>
@@ -737,7 +738,7 @@
                                         </div>
                                         
                                         <div class="item-card">
-                                            <h4><i class="fas fa-globe"></i> デモアプリケーション</h4>
+                                            <h3><i class="fas fa-globe"></i> デモアプリケーション</h3>
                                             <ul>
                                                 <li><strong>実用性：</strong>実際に動作する完成度</li>
                                                 <li><strong>技術力：</strong>適切な技術選択と実装</li>
@@ -747,7 +748,7 @@
                                         </div>
                                         
                                         <div class="item-card">
-                                            <h4><i class="fas fa-file-alt"></i> 技術文書・解説</h4>
+                                            <h3><i class="fas fa-file-alt"></i> 技術文書・解説</h3>
                                             <ul>
                                                 <li><strong>README：</strong>プロジェクトの明確な説明</li>
                                                 <li><strong>アーキテクチャ：</strong>設計思想・技術選択理由</li>
@@ -762,7 +763,7 @@
                                     <h3><i class="fas fa-lightbulb"></i> おすすめプロジェクト</h3>
                                     <div class="project-types">
                                         <div class="project-type">
-                                            <h4><i class="fas fa-shopping-cart"></i> Eコマースアプリ</h4>
+                                            <h3><i class="fas fa-shopping-cart"></i> Eコマースアプリ</h3>
                                             <div class="project-details">
                                                 <p><strong>技術要素：</strong>認証、決済、在庫管理、検索、レコメンド</p>
                                                 <p><strong>学習効果：</strong>フルスタック開発、API設計、データベース設計</p>
@@ -771,7 +772,7 @@
                                         </div>
                                         
                                         <div class="project-type">
-                                            <h4><i class="fas fa-comments"></i> リアルタイムチャット</h4>
+                                            <h3><i class="fas fa-comments"></i> リアルタイムチャット</h3>
                                             <div class="project-details">
                                                 <p><strong>技術要素：</strong>WebSocket、プッシュ通知、ファイル共有</p>
                                                 <p><strong>学習効果：</strong>リアルタイム通信、並行処理、スケーラビリティ</p>
@@ -780,7 +781,7 @@
                                         </div>
                                         
                                         <div class="project-type">
-                                            <h4><i class="fas fa-chart-line"></i> データ分析ダッシュボード</h4>
+                                            <h3><i class="fas fa-chart-line"></i> データ分析ダッシュボード</h3>
                                             <div class="project-details">
                                                 <p><strong>技術要素：</strong>データ処理、可視化、レポート生成</p>
                                                 <p><strong>学習効果：</strong>データパイプライン、ETL処理、パフォーマンス最適化</p>
@@ -793,7 +794,7 @@
                                 <div class="portfolio-presentation">
                                     <h3><i class="fas fa-presentation"></i> 効果的なプレゼンテーション</h3>
                                     <div class="presentation-tips">
-                                        <h4>技術説明のポイント</h4>
+                                        <h3>技術説明のポイント</h3>
                                         <ul>
                                             <li><strong>課題設定：</strong>なぜこのプロジェクトを作ったか</li>
                                             <li><strong>技術選択：</strong>選択した技術の理由と代替案検討</li>
@@ -801,7 +802,7 @@
                                             <li><strong>成果測定：</strong>パフォーマンス改善・ユーザー反応等</li>
                                         </ul>
                                         
-                                        <h4>デモの準備</h4>
+                                        <h3>デモの準備</h3>
                                         <ul>
                                             <li><strong>動作確認：</strong>事前に動作テスト・バックアップ準備</li>
                                             <li><strong>シナリオ：</strong>主要機能を効率的に紹介する流れ</li>
@@ -812,34 +813,16 @@
                                 </div>
                             </div>
 
-                            <div class="final-checklist">
+                            <div class="example-box">
                                 <h3><i class="fas fa-check-double"></i> 面接準備最終チェック</h3>
-                                <div class="checklist">
-                                    <div class="checklist-item">
-                                        <input type="checkbox" id="check1">
-                                        <label for="check1">アルゴリズム・データ構造の基礎を習得している</label>
-                                    </div>
-                                    <div class="checklist-item">
-                                        <input type="checkbox" id="check2">
-                                        <label for="check2">システム設計の基本原則を理解している</label>
-                                    </div>
-                                    <div class="checklist-item">
-                                        <input type="checkbox" id="check3">
-                                        <label for="check3">使用技術の深い理解と実装経験がある</label>
-                                    </div>
-                                    <div class="checklist-item">
-                                        <input type="checkbox" id="check4">
-                                        <label for="check4">プロジェクト経験をSTAR法で整理している</label>
-                                    </div>
-                                    <div class="checklist-item">
-                                        <input type="checkbox" id="check5">
-                                        <label for="check5">ポートフォリオが充実している</label>
-                                    </div>
-                                    <div class="checklist-item">
-                                        <input type="checkbox" id="check6">
-                                        <label for="check6">企業・職種に応じた対策ができている</label>
-                                    </div>
-                                </div>
+                                <ul>
+                                    <li>アルゴリズム・データ構造の基礎を習得している</li>
+                                    <li><span class="important-term">システム設計</span>の基本原則を理解している</li>
+                                    <li>使用技術の深い理解と実装経験がある</li>
+                                    <li>プロジェクト経験をSTAR法で整理している</li>
+                                    <li>ポートフォリオが充実している</li>
+                                    <li>企業・職種に応じた対策ができている</li>
+                                </ul>
                             </div>
                         </section>
                     </div>
@@ -866,8 +849,8 @@
                         <ul class="toc-list">
                             <li><a href="#industry-landscape">ソフトウェア開発業界の概況</a></li>
                             <li><a href="#interview-process">面接プロセスと評価基準</a></li>
-                            <li><a href="#coding-interview">コーディング面接対策</a></li>
-                            <li><a href="#system-design">システム設計面接</a></li>
+                            <li><a href="#coding-interview"><span class="most-important-term">コーディング面接</span>対策</a></li>
+                            <li><a href="#system-design"><span class="important-term">システム設計</span>面接</a></li>
                             <li><a href="#tech-stack">技術スタック別対策</a></li>
                             <li><a href="#behavioral-questions">行動面接の準備</a></li>
                             <li><a href="#portfolio-tips">ポートフォリオ作成指南</a></li>
@@ -887,10 +870,10 @@
                     <div class="tags">
                         <h3><i class="fas fa-tags"></i> タグ</h3>
                         <a href="#" class="tag">ソフトウェア開発</a>
-                        <a href="#" class="tag">コーディング面接</a>
-                        <a href="#" class="tag">システム設計</a>
+                        <a href="#" class="tag"><span class="important-term">コーディング面接</span></a>
+                        <a href="#" class="tag"><span class="important-term">システム設計</span></a>
                         <a href="#" class="tag">アルゴリズム</a>
-                        <a href="#" class="tag">プログラミング</a>
+                        <a href="#" class="tag"><span class="important-term">プログラミング</span></a>
                     </div>
 
                     <div class="social-share">
@@ -911,7 +894,7 @@
                         </div>
                         <div class="tip-item">
                             <i class="fas fa-sitemap"></i>
-                            <p>システム設計の体系的理解</p>
+                            <p><span class="important-term">システム設計</span>の体系的理解</p>
                         </div>
                         <div class="tip-item">
                             <i class="fas fa-briefcase"></i>
