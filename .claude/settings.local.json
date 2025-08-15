@@ -23,10 +23,29 @@
       "Bash(for file in media-*.html)",
       "Bash(do echo \"=== $file ===\")",
       "Bash(for file in consulting-*.html media-*.html)",
-      "Bash(then sed -i 's|href=\"\"/#industry-guide\"\"|href=\"\"/#industry-guide-consulting\"\"|' \"$file\")"
+      "Bash(then sed -i 's|href=\"\"/#industry-guide\"\"|href=\"\"/#industry-guide-consulting\"\"|' \"$file\")",
+      "Bash(git add:*)",
+      "Bash(for:*)",
+      "Bash(do if grep -q \"table-of-contents\" \"$file\")",
+      "Bash(! grep -q \"table-of-contents.*green-card\\|green-card.*table-of-contents\" \"$file\")",
+      "Bash(then echo \"$file\")",
+      "Bash(do if [ \"$file\" != \"index.html\" ])",
+      "Bash([ \"$file\" != \"privacy.html\" ])",
+      "Bash([[ ! \"$file\" =~ backup ]])",
+      "Bash(! grep -q \"common-theme.css\" \"$file\")",
+      "Bash(start chrome consulting-boutique.html)",
+      "Bash(start chrome consulting-strategy.html)",
+      "Bash(cp:*)",
+      "Bash(start chrome \"C:\\tanichi\\app\\poteking\\consulting-boutique.html\")",
+      "Bash(start chrome \"C:\\tanichi\\app\\poteking\\consulting-thinktank.html\")",
+      "Bash(start chrome:*)",
+      "Bash(awk:*)"
     ],
     "deny": [],
     "ask": [],
-    "defaultMode": "acceptEdits"
+    "defaultMode": "acceptEdits",
+    "additionalDirectories": [
+      "C:\\c\\tanichi\\app"
+    ]
   }
 }

@@ -21,16 +21,49 @@
 
 /* ヘッダーグラデーション */
 .article-header {
+    background: transparent !important;
+    border: none !important;
+    padding: 1rem 0 !important;
+}
+
+.article-header::before {
+    display: none !important;
+}
+
+.article-header h1 {
+    font-size: 2.8rem !important;
+    font-weight: 700 !important;
     background: linear-gradient(135deg, 
-        var(--primary-green-bg) 0%, 
-        var(--accent-blue-bg) 50%, 
-        var(--accent-purple-bg) 100%);
-    border-top: 3px solid transparent;
-    border-image: linear-gradient(90deg, 
         var(--primary-green) 0%, 
         var(--accent-blue) 50%, 
         var(--accent-purple) 100%);
-    border-image-slice: 1;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center !important;
+    margin-bottom: 2rem !important;
+    padding: 1rem !important;
+    position: relative;
+    animation: titleGlow 3s ease-in-out infinite;
+}
+
+@keyframes titleGlow {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.02); opacity: 0.9; }
+}
+
+.article-subtitle {
+    background: linear-gradient(135deg, #ffffff, var(--accent-blue-bg)) !important;
+    border-left: 4px solid var(--accent-blue) !important;
+    border-radius: 10px !important;
+    padding: 1.5rem !important;
+    margin: 1.5rem 0 !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08) !important;
+    font-size: 1.1rem !important;
+    line-height: 1.8 !important;
+    color: #333 !important;
+    font-weight: 400 !important;
+    text-align: left !important;
 }
 
 /* 目次のカスタマイズ */
@@ -188,39 +221,47 @@
 
 /* impression-points内のリストの余白調整 */
 .impression-points ul {
-    padding-left: 0;
+    padding-left: 1.5rem;
     margin-left: 0;
     list-style: none;
 }
 
 .impression-points ul li {
     padding-left: 0;
-    margin-left: 0;
+    margin-left: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
 .innovation-section .impression-points ul {
-    padding-left: 0;
+    padding-left: 1.5rem;
     margin-left: 0;
 }
 
 .innovation-section .impression-points ul li {
     padding-left: 0;
-    margin-left: 0;
+    margin-left: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
 /* element-content内のulも同様に調整 */
 .element-content ul {
-    padding-left: 0 !important;
+    padding-left: 1.5rem !important;
     margin-left: 0 !important;
     list-style: none !important;
 }
 
 .element-content ul li {
-    padding-left: 0 !important;
-    margin-left: 0 !important;
+    padding-left: 1rem !important;
+    margin-left: 1rem !important;
     position: relative !important;
+}
+
+.element-content ul li:before {
+    content: "•";
+    position: absolute;
+    left: -0.5rem;
+    color: var(--accent-blue);
+    font-weight: bold;
 }
 
 /* point-card内のelement-contentの調整 */
@@ -229,13 +270,65 @@
 }
 
 .point-card .element-content ul {
-    padding-left: 0 !important;
+    padding-left: 0.5rem !important;
     margin-left: 0 !important;
 }
 
 .point-card .element-content ul li {
-    padding-left: 0 !important;
+    padding-left: 0.8rem !important;
     margin-left: 0 !important;
+}
+
+/* example-box内のリストの余白調整 */
+.example-box ul {
+    padding-left: 1.2rem !important;
+    margin-left: 0 !important;
+    list-style: none !important;
+}
+
+.example-box ul li {
+    padding-left: 1rem !important;
+    margin-left: 0 !important;
+    position: relative !important;
+}
+
+.example-box ul li:before {
+    content: "▶";
+    position: absolute;
+    left: -1rem;
+    color: var(--accent-blue);
+    font-size: 0.6em;
+    top: 0.3em;
+}
+
+/* point-card直下のulの余白調整（element-contentを通さない場合） */
+.point-card > ul {
+    padding-left: 0.8rem !important;
+    margin-left: 0 !important;
+    list-style: none !important;
+}
+
+.point-card > ul li {
+    padding-left: 0.5rem !important;
+    margin-left: 0 !important;
+    position: relative !important;
+}
+
+.point-card > ul li:before {
+    content: "•";
+    position: absolute;
+    left: -0.8rem;
+    color: var(--accent-green);
+    font-weight: bold;
+}
+
+/* industry-content内のリストのマーカーを削除 */
+.industry-content ul li::before {
+    display: none !important;
+}
+
+.industry-content ul li {
+    padding-left: 0 !important;
 }
 
 /* CTAボタンのグラデーション */
@@ -517,4 +610,49 @@
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     opacity: 0.9;
+}
+
+/* Underline Classes for Important Terms */
+.tech-term {
+    border-bottom: 2px solid var(--primary-green);
+    padding-bottom: 1px;
+    font-weight: 600;
+    color: var(--primary-green);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.tech-term:hover {
+    background: var(--primary-green-bg);
+    border-bottom-color: var(--primary-green-light);
+}
+
+.business-term {
+    border-bottom: 2px solid var(--accent-purple);
+    padding-bottom: 1px;
+    font-weight: 600;
+    color: var(--accent-purple);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.business-term:hover {
+    background: var(--accent-purple-bg);
+    border-bottom-color: var(--accent-purple-light);
+}
+
+/* important-term styles moved to common-theme.css */
+
+.key-concept {
+    border-bottom: 2px solid var(--accent-orange);
+    padding-bottom: 1px;
+    font-weight: 600;
+    color: var(--accent-orange);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.key-concept:hover {
+    background: var(--accent-orange-bg);
+    border-bottom-color: var(--accent-orange-light);
 }

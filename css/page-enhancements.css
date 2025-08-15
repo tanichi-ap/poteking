@@ -1,5 +1,71 @@
 /* Enhanced Page Styles for Beautiful Design */
 
+/* Green Card Style for Table of Contents */
+.table-of-contents.green-card {
+    background: linear-gradient(135deg, #f0fff4, #e8f5e8) !important;
+    border: 1px solid #b8e6c8 !important;
+    border-radius: 12px !important;
+    padding: 1.5rem !important;
+    margin: 2rem 0 !important;
+    box-shadow: 0 4px 15px rgba(6, 130, 0, 0.1) !important;
+    transition: all 0.3s ease !important;
+}
+
+.table-of-contents.green-card:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(6, 130, 0, 0.15) !important;
+    border-color: #90d3a4 !important;
+}
+
+.table-of-contents.green-card h3 {
+    color: #068200 !important;
+    margin: 0 0 1rem 0 !important;
+    padding: 0 !important;
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.8rem !important;
+    border-bottom: 2px solid #068200 !important;
+    padding-bottom: 0.8rem !important;
+}
+
+.table-of-contents.green-card h3 i {
+    color: #068200 !important;
+    font-size: 1.2rem !important;
+}
+
+.table-of-contents.green-card .toc-list {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.table-of-contents.green-card .toc-list li {
+    margin-bottom: 0.5rem !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    transition: all 0.3s ease !important;
+}
+
+.table-of-contents.green-card .toc-list li:hover {
+    background: transparent !important;
+    transform: none !important;
+}
+
+.table-of-contents.green-card .toc-list li a {
+    color: #068200 !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+    display: block !important;
+    transition: color 0.3s ease !important;
+}
+
+.table-of-contents.green-card .toc-list li a:hover {
+    color: #0b7c01 !important;
+}
+
 /* Reset main-content to prevent conflicts */
 .main-content {
     padding: 2rem 0 !important;
@@ -202,13 +268,14 @@
 
 .point-card ul {
     list-style: none !important;
-    padding: 0 !important;
+    padding: 0 0 0 1.5rem !important;
     margin: 1rem 0 !important;
     text-align: left !important;
 }
 
 .point-card li {
     margin-bottom: 0.8rem !important;
+    margin-left: 0.5rem !important;
     padding: 0.5rem 1rem !important;
     background: #f8fff8 !important;
     border-radius: 6px !important;
@@ -593,7 +660,7 @@
 
 .point-card .element-content ul {
     margin: 1rem 0 !important;
-    padding-left: 1.5rem !important;
+    padding-left: 2rem !important;
 }
 
 .point-card .element-content p {
