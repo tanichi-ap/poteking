@@ -39,7 +39,8 @@
       "Bash(start chrome \"C:\\tanichi\\app\\poteking\\consulting-boutique.html\")",
       "Bash(start chrome \"C:\\tanichi\\app\\poteking\\consulting-thinktank.html\")",
       "Bash(start chrome:*)",
-      "Bash(awk:*)"
+      "Bash(awk:*)",
+      "Bash(! grep -q \"favicon\" \"$file\")"
     ],
     "deny": [],
     "ask": [],
