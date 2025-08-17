@@ -40,7 +40,17 @@
       "Bash(start chrome \"C:\\tanichi\\app\\poteking\\consulting-thinktank.html\")",
       "Bash(start chrome:*)",
       "Bash(awk:*)",
-      "Bash(! grep -q \"favicon\" \"$file\")"
+      "Bash(! grep -q \"favicon\" \"$file\")",
+      "Bash(true)",
+      "Bash(dir:*)",
+      "Bash(powershell:*)",
+      "Bash(move:*)",
+      "Bash(do sed -i 's|<link rel=\"\"stylesheet\"\" href=\"\"css/style.css\"\">.*<link rel=\"\"stylesheet\"\" href=\"\"css/pages.css\"\">|<link rel=\"\"stylesheet\"\" href=\"\"css/common-theme.css\"\">|' \"$file\")",
+      "Bash(do sed -i 's|    <link rel=\"\"stylesheet\"\" href=\"\"css/style.css\"\">|    <link rel=\"\"stylesheet\"\" href=\"\"css/common-theme.css\"\">|; /    <link rel=\"\"stylesheet\"\" href=\"\"css\\/pages.css\"\">/d' \"$file\")",
+      "Bash(then sed -i 's/class=\"\"code-block\"\"/class=\"\"example-box\"\"/g' \"$file\")",
+      "Bash(then echo \"Converting custom classes in $file\")",
+      "Bash(git commit:*)",
+      "Bash(rg:*)"
     ],
     "deny": [],
     "ask": [],

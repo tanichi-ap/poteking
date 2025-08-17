@@ -875,16 +875,31 @@ body {
 .impression-points .point-card:nth-child(3n+1) {
     background: linear-gradient(135deg, #ffffff, #f0fff4) !important;
     border: 1px solid #e8f5e8 !important;
+    color: #333 !important;
+}
+
+.impression-points .point-card:nth-child(3n+1) p {
+    color: #333 !important;
 }
 
 .impression-points .point-card:nth-child(3n+2) {
     background: linear-gradient(135deg, #ffffff, #fff7ed) !important;
     border: 1px solid #ffcc99 !important;
+    color: #333 !important;
+}
+
+.impression-points .point-card:nth-child(3n+2) p {
+    color: #333 !important;
 }
 
 .impression-points .point-card:nth-child(3n) {
     background: linear-gradient(135deg, #ffffff, #f3f0ff) !important;
     border: 1px solid #d4c5f9 !important;
+    color: #333 !important;
+}
+
+.impression-points .point-card:nth-child(3n) p {
+    color: #333 !important;
 }
 
 .point-card:hover {
@@ -954,16 +969,149 @@ body {
     font-weight: 600;
 }
 
-/* point-cardの見出し色をカードの色に合わせる */
-.impression-points .point-card:nth-child(3n+1) h3 {
-    color: var(--primary-green) !important;
+/* point-card内のすべてのテキスト要素の色を確実に設定 - 最高優先度 */
+body .impression-points .point-card,
+html body .impression-points .point-card {
+    color: #333 !important;
 }
 
-.impression-points .point-card:nth-child(3n+2) h3 {
-    color: var(--accent-orange) !important;
+body .impression-points .point-card p,
+html body .impression-points .point-card p {
+    color: #333 !important;
 }
 
-.impression-points .point-card:nth-child(3n) h3 {
+body .impression-points .point-card span,
+html body .impression-points .point-card span {
+    color: #333 !important;
+}
+
+body .impression-points .point-card li,
+html body .impression-points .point-card li {
+    color: #333 !important;
+}
+
+body .impression-points .point-card div,
+html body .impression-points .point-card div {
+    color: #333 !important;
+}
+
+body .impression-points .point-card h4,
+html body .impression-points .point-card h4 {
+    color: #333 !important;
+}
+
+body .impression-points .point-card h5,
+html body .impression-points .point-card h5 {
+    color: #333 !important;
+}
+
+body .impression-points .point-card strong,
+html body .impression-points .point-card strong {
+    color: #333 !important;
+}
+
+body .impression-points .point-card em,
+html body .impression-points .point-card em {
+    color: #333 !important;
+}
+
+/* element-content内のテキストも確実に設定 */
+body .impression-points .point-card .element-content,
+html body .impression-points .point-card .element-content {
+    color: #333 !important;
+}
+
+body .impression-points .point-card .element-content *,
+html body .impression-points .point-card .element-content * {
+    color: #333 !important;
+}
+
+/* 絶対的に黒文字を保証するためのルール */
+.impression-points .point-card:nth-child(3n+2) p,
+.impression-points .point-card:nth-child(3n+2) .element-content p,
+.impression-points .point-card:nth-child(3n) p,
+.impression-points .point-card:nth-child(3n) .element-content p {
+    color: #333 !important;
+}
+
+/* 全ての可能なセレクタに対して黒文字を強制 */
+.point-card p,
+.point-card .element-content p,
+.point-card .element-content ul li,
+.point-card .element-content * {
+    color: #333 !important;
+}
+
+/* body内の全てのpoint-cardテキストを強制的に黒色に */
+body * .point-card p,
+body * .point-card li,
+body * .point-card span,
+body * .point-card div.element-content {
+    color: #333 !important;
+}
+
+/* industry-card内のimpression-points内のpoint-cardの背景色を最高優先度で設定 */
+html body .industry-customization .industry-card .impression-points .point-card:nth-child(3n+1) {
+    background: linear-gradient(135deg, #ffffff, #f0fff4) !important; /* 緑 */
+    border: 1px solid #e8f5e8 !important;
+}
+
+html body .industry-customization .industry-card .impression-points .point-card:nth-child(3n+2) {
+    background: linear-gradient(135deg, #ffffff, #fff7ed) !important; /* オレンジ */
+    border: 1px solid #ffcc99 !important;
+}
+
+html body .industry-customization .industry-card .impression-points .point-card:nth-child(3n) {
+    background: linear-gradient(135deg, #ffffff, #f3f0ff) !important; /* 紫 */
+    border: 1px solid #d4c5f9 !important;
+}
+
+/* industry-card内のpoint-cardで親要素からの色継承をブロック（背景色は維持） */
+.industry-customization .industry-card .impression-points .point-card *,
+.industry-customization .industry-card .impression-points .point-card p,
+.industry-customization .industry-card .impression-points .point-card li,
+.industry-customization .industry-card .impression-points .point-card span,
+.industry-customization .industry-card .impression-points .point-card div,
+.industry-customization .industry-card .impression-points .point-card strong,
+.industry-customization .industry-card .impression-points .point-card ul,
+.industry-customization .industry-card .impression-points .point-card ul li {
+    color: #333 !important;
+}
+
+/* industry-card内のpoint-cardのul liの背景色も正しく設定 */
+.industry-customization .industry-card .impression-points .point-card:nth-child(3n+1) ul li {
+    background: #f8fff8 !important; /* 緑系 */
+    border-left: 3px solid #068200 !important;
+}
+
+.industry-customization .industry-card .impression-points .point-card:nth-child(3n+2) ul li {
+    background: #fff8f0 !important; /* オレンジ系 */
+    border-left: 3px solid #ff8c42 !important;
+}
+
+.industry-customization .industry-card .impression-points .point-card:nth-child(3n) ul li {
+    background: #f8f0ff !important; /* 紫系 */
+    border-left: 3px solid #8b7cc3 !important;
+}
+
+/* industry-card内のpoint-cardのh3も含めてすべて黒文字に統一 */
+.industry-customization .industry-card .impression-points .point-card h3,
+.industry-customization .industry-card .impression-points .point-card:nth-child(3n+1) h3,
+.industry-customization .industry-card .impression-points .point-card:nth-child(3n+2) h3,
+.industry-customization .industry-card .impression-points .point-card:nth-child(3n) h3 {
+    color: #333 !important;
+}
+
+/* point-cardの見出し色をカードの色に合わせる（h3のみ特別扱い） */
+body .impression-points .point-card:nth-child(3n+1) h3 {
+    color: #068200 !important;  /* var(--primary-green) */
+}
+
+body .impression-points .point-card:nth-child(3n+2) h3 {
+    color: #ea580c !important;  /* var(--accent-orange) */
+}
+
+body .impression-points .point-card:nth-child(3n) h3 {
     color: #7c3aed !important;
 }
 
@@ -992,6 +1140,11 @@ body {
 .point-card .element-content {
     padding: 0.5rem 0.5rem 0 0.5rem;
     text-align: left;
+    color: #333 !important;
+}
+
+.point-card .element-content p {
+    color: #333 !important;
 }
 
 .point-card .element-content h4 {
@@ -1388,7 +1541,7 @@ body {
     margin-bottom: 2rem;
 }
 
-.footer-section h4 {
+footer .footer-section h4 {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -1678,4 +1831,40 @@ body {
     .section-divider {
         margin: 1.5rem 0 !important;
     }
+}
+
+/* ========================================
+   �ō��D��x��industry-card����point-card�̔w�i�F��ݒ�
+   ======================================== */
+html body .industry-customization .industry-card .impression-points .point-card:nth-child(3n+1) {
+    background: linear-gradient(135deg, #ffffff, #f0fff4) !important; /* �� */
+    border: 1px solid #e8f5e8 !important;
+}
+
+html body .industry-customization .industry-card .impression-points .point-card:nth-child(3n+2) {
+    background: linear-gradient(135deg, #ffffff, #fff7ed) !important; /* �I�����W */
+    border: 1px solid #ffcc99 !important;
+}
+
+html body .industry-customization .industry-card .impression-points .point-card:nth-child(3n) {
+    background: linear-gradient(135deg, #ffffff, #f3f0ff) !important; /* �� */
+    border: 1px solid #d4c5f9 !important;
+}
+
+html body .industry-customization .industry-card .impression-points .point-card:nth-child(3n+1) ul li {
+    background: #f8fff8 !important; /* �Όn */
+    border-left: 3px solid #068200 !important;
+    color: #333 !important;
+}
+
+html body .industry-customization .industry-card .impression-points .point-card:nth-child(3n+2) ul li {
+    background: #fff8f0 !important; /* �I�����W�n */
+    border-left: 3px solid #ff8c42 !important;
+    color: #333 !important;
+}
+
+html body .industry-customization .industry-card .impression-points .point-card:nth-child(3n) ul li {
+    background: #f8f0ff !important; /* ���n */
+    border-left: 3px solid #8b7cc3 !important;
+    color: #333 !important;
 }
